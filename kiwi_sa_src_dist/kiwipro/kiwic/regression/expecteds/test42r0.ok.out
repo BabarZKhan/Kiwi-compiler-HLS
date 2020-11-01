@@ -1,0 +1,15 @@
+VCD info: dumpfile vcd.vcd opened for output.
+test42
+The value of the integer: 101
+pioRegfileWrite addr=8 data=0xdeadbeef.
+pioRegfileWrite addr=16 data=0x12345678.
+pioRegfileRead addr=8 data=0xdeadbeef.
+Read back 0xdeadbeef from address 8
+Read back 0xdeadbeef from address 8
+pioRegfileRead addr=16 data=0x12345778.
+Read back 0x12345778 from address 16
+Read back 0x12345778 from address 16
+pioRegfileRead addr=8 data=0xdeadbeef.
+Read back 0xdeadbeef from address 8
+Read back 0xdeadbeef from address 8
+Finish HDL simulation on timeout          10000000000.

@@ -1,0 +1,19 @@
+#
+# Kiwi Regression Test control script
+#
+# 1=filename
+# 2=args
+# 3=args
+# 4=file extension to diff against
+rm -f  $1.spool diosim.out
+EXTRAS=" -give-backtrace -report-each-step   "
+kl=
+#printenv
+#$KIWIC -verboselevel 10 $1.exe $kl $KIWIC_ARGS  $2 $3 $EXTRAS 
+$KIWIC  $1.exe $kl $KIWIC_ARGS  $2 $3 $EXTRAS  > $1.spool && ./mygrep "+++" $1.spool && diff diosim.out expecteds/$1.$4 
+# && rm -rf ${1}.obj.d; mv obj ${1}.obj.d
+
+
+
+
+

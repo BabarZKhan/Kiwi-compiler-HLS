@@ -1,0 +1,28 @@
+Test38r4 start.
+ pre lebon=33000, ben=44000
+ post 0 : 33010 and 33110
+ post duran=900
+ post 1 : 33001 and 44001
+ post duran=901
+ post 2 : 33002 and 44002
+ post duran=902
+ post 0 : 33020 and 33120
+ post duran=900
+ post 1 : 33001 and 44001
+ post duran=901
+ post 2 : 33002 and 44002
+ post duran=902
+ post 0 : 33011 and 33111
+ post duran=900
+ post 1 : 33002 and 44002
+ post duran=901
+ post 2 : 33002 and 44002
+ post duran=902
+ post 0 : 33021 and 33121
+ post duran=900
+ post 1 : 33002 and 44002
+ post duran=901
+ post 2 : 33002 and 44002
+ post duran=902
+Test38r4 finished.
+Diosim done.

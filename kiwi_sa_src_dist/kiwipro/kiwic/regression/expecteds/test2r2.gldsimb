@@ -1,0 +1,21 @@
+Test2r2: Shared-variable test: Start
+Note: this can be fragile owing to races.
+Process1 count=0, shared_var=0
+Process2 5 
+Process1 count=10, shared_var=6
+Process2 15 
+Process1 count=20, shared_var=11
+Process1 count=30, shared_var=16
+Process2 25 
+Process1 count=40, shared_var=26
+Process2 35 
+Process2 spots Process1 35 41 
+Process1 count=50, shared_var=41
+Process1 count=60, shared_var=36
+Process2 45 
+Process1 count=70, shared_var=46
+Process2 55 
+Process1 count=80, shared_var=71
+Process1 count=90, shared_var=56
+Process2 65 
+Diosim done.

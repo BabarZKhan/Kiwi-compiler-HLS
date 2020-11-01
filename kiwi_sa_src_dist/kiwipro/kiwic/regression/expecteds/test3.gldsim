@@ -1,0 +1,11 @@
+ yoko 
+Run E2 0
+  XAC
+  Enum pt one 17 17
+Run E2 1
+  XAB
+  Enum pt one 1 1
+Run E2 2
+  Unknown value 2
+  Enum pt one 2 2
+Diosim done.

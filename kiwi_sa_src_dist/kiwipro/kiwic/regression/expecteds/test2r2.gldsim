@@ -1,0 +1,25 @@
+Process1 count=0, shared_var=0
+Test2r2: Shared-variable test: Start
+Note: this test, in its current form, is very fragile owing to races and has non-determinstic output - useless for regression!
+Process2 5 
+Process1 count=10, shared_var=6
+Process2 15 
+Process1 count=20, shared_var=16
+Process2 25 
+Process1 count=30, shared_var=26
+Process2 35 
+Process1 count=40, shared_var=36
+Process2 45 
+Process2 spots Process1 45 41 
+Process1 count=50, shared_var=46
+Process2 55 
+Process1 count=60, shared_var=56
+Process2 65 
+Process1 count=70, shared_var=66
+Process2 75 
+Process1 count=80, shared_var=76
+Process2 85 
+Process1 count=90, shared_var=86
+Process2 95 
+Test2r2: Shared-variable test: Finished
+Diosim done.

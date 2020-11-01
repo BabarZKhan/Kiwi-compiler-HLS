@@ -1,0 +1,7 @@
+First printed value should be 200:  200
+  Test20  l=200 r=400
+  Test20  sumval=600
+  Test20  l=1000 r=50
+  Test20  sumval=1050
+End of Test 1234
+Diosim done.

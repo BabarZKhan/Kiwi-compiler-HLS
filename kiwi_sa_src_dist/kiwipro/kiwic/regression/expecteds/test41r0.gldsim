@@ -1,0 +1,14 @@
+Running test41r0
+The value of the integer: 2048
+  readback vv=110 rb=1110 ss=1110
+  readback vv=111 rb=1111 ss=2221
+  readback vv=112 rb=1112 ss=3333
+  readback vv=113 rb=1113 ss=4446
+  readback vv=114 rb=2114 ss=6560
+  readback vv=115 rb=2115 ss=8675
+  readback vv=116 rb=2116 ss=10791
+  readback vv=117 rb=1117 ss=11908
+  readback vv=118 rb=1118 ss=13026
+  readback vv=119 rb=1119 ss=14145
+Press any key to exit.
+Diosim done.

@@ -1,0 +1,18 @@
+Test 12 Michaelmas 2011.
+  Andy.bill  100
+  Andy.ben   111
+  Martin.ben 312
+  Martin.child.ben 414
+  Martin.child.ben 416
+  Andy.child.ben 216
+  Swapped roof one   218
+  Swapped roof other 220
+  Swapped one   i=0 118
+  Swapped other i=0 120
+  Swapped one   i=1 418
+  Swapped other i=1 420
+  Swapped one   i=2 318
+  Swapped other i=2 320
+  Swapped one   i=3 418
+  Swapped other i=3 420
+Diosim done.

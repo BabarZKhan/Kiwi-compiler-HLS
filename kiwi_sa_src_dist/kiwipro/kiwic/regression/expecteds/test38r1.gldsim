@@ -1,0 +1,6 @@
+Test38r1 start.
+ pre bill=33000, ben=44000
+ post bill=33001, ben=33101
+ post bill=33002, ben=33102
+Test38r1 finished.
+Diosim done.

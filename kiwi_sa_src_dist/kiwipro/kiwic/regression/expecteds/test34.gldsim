@@ -1,0 +1,26 @@
+Test34 start.
+Test34 s/p multiply start.
+  Test34 s/p multiply 1.0.
+  Test34 s/p multiply 1.100000024.
+  Test34 s/p multiply 1.210000052.
+  Test34 s/p multiply 1.331000087.
+  Test34 s/p multiply 1.464100127.
+  Test34 s/p multiply 1.610510175.
+  Test34 s/p multiply 1.77156123.
+  Test34 s/p multiply 1.948717396.
+  Test34 s/p multiply 2.143589182.
+  Test34 s/p multiply 2.357948151.
+Test34 s/p multiply end.
+Test34 s/p divide start.
+  Test34 s/p divide 1.45599997.
+  Test34 s/p divide 0.004819229382.
+  Test34 s/p divide 1.538102726e-05.
+  Test34 s/p divide 4.739580229e-08.
+  Test34 s/p divide 1.411753272e-10.
+  Test34 s/p divide 4.069356406e-13.
+  Test34 s/p divide 1.136301376e-15.
+  Test34 s/p divide 3.076714484e-18.
+  Test34 s/p divide 8.085489207e-21.
+  Test34 s/p divide 2.064083429e-23.
+Test34 s/p divide end.
+Diosim done.

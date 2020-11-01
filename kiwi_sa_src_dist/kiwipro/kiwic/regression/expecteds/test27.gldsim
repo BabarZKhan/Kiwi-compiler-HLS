@@ -1,0 +1,14 @@
+Test 27 start.
+  Pre-test ha.left 907
+  Pre-test hb.left 32
+First printed value should be 32 32
+  Test27 (north variant) ha.left=32   kq=0
+  Test27 (north variant) ha currently null.
+  Test27 (north variant) ha.left=907   kq=2
+  Test27 (north variant) ha.left=32   kq=3
+  Test27 (north variant) ha currently null.
+  Test27 (north variant) ha.left=907   kq=5
+  Test27 (north variant) ha.left=32   kq=6
+  Test27 (north variant) ha currently null.
+Test 27 finished.
+Diosim done.

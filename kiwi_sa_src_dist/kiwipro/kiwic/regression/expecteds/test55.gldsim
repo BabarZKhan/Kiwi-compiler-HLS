@@ -1,0 +1,24 @@
+Kiwi Demo - Test55 starting.
+Kiwi Demo - Test55_1 starting.
+   ... GetAFun anonymous delegate body arg=5 fv=1
+7
+   ... GetAFun anonymous delegate body arg=6 fv=2
+9
+Test55_1 done.
+Kiwi Demo - Test55_0 starting - function delegate.
+  50 1000 baz_topper
+  yielding kandy
+  49 1001 baz_topper
+  yielding kandy
+  48 1002 baz_topper
+  yielding kandy
+t55_0 done.
+Kiwi Demo - Test55_2 starting - delegate pointer swapping.
+  site1 100 boz red
+  site2 200 boz green
+  site1 101 boz green
+  site2 201 boz red
+  site1 102 boz red
+  site2 202 boz green
+Test55_2 done.
+Diosim done.

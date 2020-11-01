@@ -1,0 +1,38 @@
+Test0 st0
+ st0 byte left shift: 44 44000000
+ st0 byte left shift: 45 45000000
+ st0 byte arith 0: summ=250  prod=0
+ st0 byte arith 1: summ=255  prod=1004
+ st0 byte arith 2: summ=260  prod=2016
+ st0 byte arith 3: summ=265  prod=3036
+Test0 st1
+<><><>> mask: FFFFFFFFFFFF00FF
+Test0 st2
+<><><>> data: DEAD00EF
+Test0 st3
+v2 5678
+v3 5678
+v2 5678
+v3 5678
+Test0 st4
+preloop   shr.uns ffffff
+preloop   shr     ffffffffffffffff
+
+inloop  shr.uns ffffff
+        shr     ffffffffffffffff
+inloop  shr.uns ffff
+        shr     ffffffffffffffff
+inloop  shr.uns ff
+        shr     ffffffffffffffff
+Test0 st5
+shipton test st5a: one's complement  32 101 --> -135
+shipton test st5b: one's complement  32 101 --> -135
+shipton test st5b: one's complement  64 50 --> -116
+Test0 st6
+dfsin ulong to long -ve kk=0 pp=FF000000 8556380160
+dfsin ulong to long -ve kk=1 pp=FF0000000000 560750930165760
+dfsin ulong to long -ve kk=2 pp=FF00000000000000 36749372959343247360
+Went -ve
+dfsin ulong to long -ve kk=3 pp=FF000000000000000000 2408406906263519058984960
+Test0 complete % %% %%% percent.
+Diosim done.

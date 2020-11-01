@@ -1,0 +1,29 @@
+VCD info: dumpfile vcd.vcd opened for output.
+-ve Parallel Print Char '00'
+
+Test9 start - note this does not exit currently under diosim.
+ 0x48 +ve Parallel Print Char '48'
+-ve Parallel Print Char '48'
+ 0x65 +ve Parallel Print Char '65'
+-ve Parallel Print Char '65'
+ 0x6c +ve Parallel Print Char '6c'
+-ve Parallel Print Char '6c'
+ 0x6c +ve Parallel Print Char '6c'
+-ve Parallel Print Char '6c'
+ 0x6f +ve Parallel Print Char '6f'
+-ve Parallel Print Char '6f'
+ 0x20 +ve Parallel Print Char '20'
+-ve Parallel Print Char '20'
+ 0x57 +ve Parallel Print Char '57'
+-ve Parallel Print Char '57'
+ 0x6f +ve Parallel Print Char '6f'
+-ve Parallel Print Char '6f'
+ 0x72 +ve Parallel Print Char '72'
+-ve Parallel Print Char '72'
+ 0x6c +ve Parallel Print Char '6c'
+-ve Parallel Print Char '6c'
+ 0x64 +ve Parallel Print Char '64'
+-ve Parallel Print Char '64'
+ 0x0a +ve Parallel Print Char '0a'
+
+Done

@@ -1,0 +1,8 @@
+  Pre-test ha.left 22
+  Pre-test hb.left 32
+First printed value should be 32 32
+  North test 32
+  North test 22
+  North test 32
+  North test 22
+Diosim done.

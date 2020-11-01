@@ -1,0 +1,12 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Test test46 start.
+Test p1 200 aaaaaaaaaa
+Test p2 201 aaaaaaaa0000
+Test p3 202 aaaaaaaa
+Test p4 203 aaaaaa00
+Test p5 204 aaaa0000
+dstt_mac is hex=cafe0000 decimal=3405643776
+dstt_mac now is hex=cafe0001 decimal=3405643777
+First    Checking Salvator's bug 2399141888 hex=8f000000
+Second   Checking Salvator's bug 2399141888 hex=8f000000
+Test test46 finished.

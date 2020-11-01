@@ -1,0 +1,49 @@
+test7_fv nulltest start
+Computed 103
+Was null for 1
+Computed 106
+test7_fv nulltest done
+
+Test7 overloads test start.
+Test7_overrides Up To 8
+1 2 3 4 5 6 7  BAR
+8 2 4 6 8 10 12 14  BAR
+16 3 6 9 12 15 18 21  BAR
+24 4 8 12 16 20 24 28  BAR
+32 5 10 15 20 25 30 35  BAR
+40 6 12 18 24 30 36 42  BAR
+48 7 14 21 28 35 42 49  BAR
+56 8 16 24 32 40 48 56  BAR
+64 Test7 method overload test done
+
+Test7 static override test start.
+Test7 lower override adder vv=0
+Test7 lower override adder vv=0
+Test7 upper adder vv=0
+Test7 static override i=0 l=102
+      static override i=0 m=102
+      static override i=0 u=1002
+Test7 lower override adder vv=1
+Test7 lower override adder vv=1
+Test7 upper adder vv=1
+Test7 static override i=1 l=103
+      static override i=1 m=103
+      static override i=1 u=1003
+Test7 static override test done
+
+Test7 dynamic override test start.
+Test7 lower override adder vv=10
+Test7 dynamic i=0 px=112
+Test7 lower override adder vv=10
+Test7 dynamic i=1 px=112
+Test7 upper adder vv=10
+Test7 dynamic i=2 px=1012
+Test7 dynamic override test done
+
+Test7 fv test start.
+   test7_fv 0 result 104
+   test7_fv 1 result 105
+   test7_fv 2 result 502
+   test7_fv 3 result 106
+test7_fv done
+Diosim done.

@@ -1,0 +1,439 @@
+Test36 start.
+ .. bunny ctor call 100
+ .. bunny ctor call 101
+ .. bunny ctor call 102
+ .. bunny ctor call 103
+ .. bunny ctor call 104
+ .. bunny ctor call 105
+ .. bunny ctor call 106
+ .. bunny ctor call 107
+ .. bunny ctor call 108
+ .. bunny ctor call 109
+ .. bunny ctor call 110
+ .. bunny ctor call 111
+ .. bunny ctor call 112
+ .. bunny ctor call 113
+ .. bunny ctor call 114
+ .. bunny ctor call 115
+ .. bunny ctor call 116
+ .. bunny ctor call 117
+ .. bunny ctor call 118
+ .. bunny ctor call 119
+ .. bunny ctor call 120
+ .. bunny ctor call 121
+ .. bunny ctor call 122
+ .. bunny ctor call 123
+ .. bunny ctor call 124
+ .. bunny ctor call 125
+ .. bunny ctor call 126
+ .. bunny ctor call 127
+ .. bunny ctor call 128
+ .. bunny ctor call 129
+ .. bunny ctor call 130
+ .. bunny ctor call 131
+xcount start 0
+  interim A : Xcount=0,  x=15 y=16
+  interim A : Xcount=0,  sum1=31 sum2=0
+  interim A : Xcount=0,  x=102 y=103
+  interim A : Xcount=0,  sum1=236 sum2=0
+  interim A : Xcount=0,  x=103 y=104
+  interim A : Xcount=0,  sum1=443 sum2=0
+  interim A : Xcount=0,  x=104 y=105
+  interim A : Xcount=0,  sum1=652 sum2=0
+  interim A : Xcount=0,  x=105 y=106
+  interim A : Xcount=0,  sum1=863 sum2=0
+  interim A : Xcount=0,  x=106 y=107
+  interim A : Xcount=0,  sum1=1076 sum2=0
+  interim A : Xcount=0,  x=107 y=108
+  interim A : Xcount=0,  sum1=1291 sum2=0
+  interim A : Xcount=0,  x=108 y=109
+  interim A : Xcount=0,  sum1=1508 sum2=0
+  interim A : Xcount=0,  x=109 y=110
+  interim A : Xcount=0,  sum1=1727 sum2=0
+  interim A : Xcount=0,  x=110 y=111
+  interim A : Xcount=0,  sum1=1948 sum2=0
+  interim A : Xcount=0,  x=111 y=112
+  interim A : Xcount=0,  sum1=2171 sum2=0
+  interim A : Xcount=0,  x=112 y=113
+  interim A : Xcount=0,  sum1=2396 sum2=0
+  interim A : Xcount=0,  x=113 y=114
+  interim A : Xcount=0,  sum1=2623 sum2=0
+  interim A : Xcount=0,  x=114 y=115
+  interim A : Xcount=0,  sum1=2852 sum2=0
+  interim A : Xcount=0,  x=115 y=116
+  interim A : Xcount=0,  sum1=3083 sum2=0
+  interim A : Xcount=0,  x=116 y=117
+  interim A : Xcount=0,  sum1=3316 sum2=0
+  interim A : Xcount=0,  x=117 y=118
+  interim A : Xcount=0,  sum1=3551 sum2=0
+  interim A : Xcount=0,  x=118 y=119
+  interim A : Xcount=0,  sum1=3788 sum2=0
+  interim A : Xcount=0,  x=119 y=120
+  interim A : Xcount=0,  sum1=4027 sum2=0
+  interim A : Xcount=0,  x=120 y=121
+  interim A : Xcount=0,  sum1=4268 sum2=0
+  interim A : Xcount=0,  x=121 y=122
+  interim A : Xcount=0,  sum1=4511 sum2=0
+  interim A : Xcount=0,  x=122 y=123
+  interim A : Xcount=0,  sum1=4756 sum2=0
+  interim A : Xcount=0,  x=123 y=124
+  interim A : Xcount=0,  sum1=5003 sum2=0
+  interim A : Xcount=0,  x=124 y=125
+  interim A : Xcount=0,  sum1=5252 sum2=0
+  interim A : Xcount=0,  x=125 y=126
+  interim A : Xcount=0,  sum1=5503 sum2=0
+  interim A : Xcount=0,  x=126 y=127
+  interim A : Xcount=0,  sum1=5756 sum2=0
+  interim A : Xcount=0,  x=127 y=128
+  interim A : Xcount=0,  sum1=6011 sum2=0
+  interim A : Xcount=0,  x=128 y=129
+  interim A : Xcount=0,  sum1=6268 sum2=0
+  interim A : Xcount=0,  x=129 y=130
+  interim A : Xcount=0,  sum1=6527 sum2=0
+  interim A : Xcount=0,  x=130 y=131
+  interim A : Xcount=0,  sum1=6788 sum2=0
+  interim A : Xcount=0,  x=131 y=132
+  interim A : Xcount=0,  sum1=7051 sum2=0
+  interim A : Xcount=0,  x=132 y=133
+  interim A : Xcount=0,  sum1=7316 sum2=0
+  interim : Xcount=0,  sum1=7316 sum2=0
+xcount start 1
+  interim A : Xcount=1,  x=15 y=16
+  interim A : Xcount=1,  sum1=31 sum2=0
+  interim A : Xcount=1,  x=15 y=16
+  interim A : Xcount=1,  sum1=62 sum2=0
+  interim A : Xcount=1,  x=103 y=104
+  interim A : Xcount=1,  sum1=269 sum2=0
+  interim A : Xcount=1,  x=104 y=105
+  interim A : Xcount=1,  sum1=478 sum2=0
+  interim A : Xcount=1,  x=105 y=106
+  interim A : Xcount=1,  sum1=689 sum2=0
+  interim A : Xcount=1,  x=106 y=107
+  interim A : Xcount=1,  sum1=902 sum2=0
+  interim A : Xcount=1,  x=107 y=108
+  interim A : Xcount=1,  sum1=1117 sum2=0
+  interim A : Xcount=1,  x=108 y=109
+  interim A : Xcount=1,  sum1=1334 sum2=0
+  interim A : Xcount=1,  x=109 y=110
+  interim A : Xcount=1,  sum1=1553 sum2=0
+  interim A : Xcount=1,  x=110 y=111
+  interim A : Xcount=1,  sum1=1774 sum2=0
+  interim A : Xcount=1,  x=111 y=112
+  interim A : Xcount=1,  sum1=1997 sum2=0
+  interim A : Xcount=1,  x=112 y=113
+  interim A : Xcount=1,  sum1=2222 sum2=0
+  interim A : Xcount=1,  x=113 y=114
+  interim A : Xcount=1,  sum1=2449 sum2=0
+  interim A : Xcount=1,  x=114 y=115
+  interim A : Xcount=1,  sum1=2678 sum2=0
+  interim A : Xcount=1,  x=115 y=116
+  interim A : Xcount=1,  sum1=2909 sum2=0
+  interim A : Xcount=1,  x=116 y=117
+  interim A : Xcount=1,  sum1=3142 sum2=0
+  interim A : Xcount=1,  x=117 y=118
+  interim A : Xcount=1,  sum1=3377 sum2=0
+  interim A : Xcount=1,  x=118 y=119
+  interim A : Xcount=1,  sum1=3614 sum2=0
+  interim A : Xcount=1,  x=119 y=120
+  interim A : Xcount=1,  sum1=3853 sum2=0
+  interim A : Xcount=1,  x=120 y=121
+  interim A : Xcount=1,  sum1=4094 sum2=0
+  interim A : Xcount=1,  x=121 y=122
+  interim A : Xcount=1,  sum1=4337 sum2=0
+  interim A : Xcount=1,  x=122 y=123
+  interim A : Xcount=1,  sum1=4582 sum2=0
+  interim A : Xcount=1,  x=123 y=124
+  interim A : Xcount=1,  sum1=4829 sum2=0
+  interim A : Xcount=1,  x=124 y=125
+  interim A : Xcount=1,  sum1=5078 sum2=0
+  interim A : Xcount=1,  x=125 y=126
+  interim A : Xcount=1,  sum1=5329 sum2=0
+  interim A : Xcount=1,  x=126 y=127
+  interim A : Xcount=1,  sum1=5582 sum2=0
+  interim A : Xcount=1,  x=127 y=128
+  interim A : Xcount=1,  sum1=5837 sum2=0
+  interim A : Xcount=1,  x=128 y=129
+  interim A : Xcount=1,  sum1=6094 sum2=0
+  interim A : Xcount=1,  x=129 y=130
+  interim A : Xcount=1,  sum1=6353 sum2=0
+  interim A : Xcount=1,  x=130 y=131
+  interim A : Xcount=1,  sum1=6614 sum2=0
+  interim A : Xcount=1,  x=131 y=132
+  interim A : Xcount=1,  sum1=6877 sum2=0
+  interim A : Xcount=1,  x=132 y=133
+  interim A : Xcount=1,  sum1=7142 sum2=0
+  interim : Xcount=1,  sum1=7142 sum2=0
+xcount start 2
+  interim B : Xcount=2,  sum1=0 sum2=16
+  interim B : Xcount=2,  sum1=0 sum2=32
+  interim B : Xcount=2,  sum1=0 sum2=48
+  interim B : Xcount=2,  sum1=0 sum2=152
+  interim B : Xcount=2,  sum1=0 sum2=257
+  interim B : Xcount=2,  sum1=0 sum2=363
+  interim B : Xcount=2,  sum1=0 sum2=470
+  interim B : Xcount=2,  sum1=0 sum2=578
+  interim B : Xcount=2,  sum1=0 sum2=687
+  interim B : Xcount=2,  sum1=0 sum2=797
+  interim B : Xcount=2,  sum1=0 sum2=908
+  interim B : Xcount=2,  sum1=0 sum2=1020
+  interim B : Xcount=2,  sum1=0 sum2=1133
+  interim B : Xcount=2,  sum1=0 sum2=1247
+  interim B : Xcount=2,  sum1=0 sum2=1362
+  interim B : Xcount=2,  sum1=0 sum2=1478
+  interim B : Xcount=2,  sum1=0 sum2=1595
+  interim B : Xcount=2,  sum1=0 sum2=1713
+  interim B : Xcount=2,  sum1=0 sum2=1832
+  interim B : Xcount=2,  sum1=0 sum2=1952
+  interim B : Xcount=2,  sum1=0 sum2=2073
+  interim B : Xcount=2,  sum1=0 sum2=2195
+  interim B : Xcount=2,  sum1=0 sum2=2318
+  interim B : Xcount=2,  sum1=0 sum2=2442
+  interim B : Xcount=2,  sum1=0 sum2=2567
+  interim B : Xcount=2,  sum1=0 sum2=2693
+  interim B : Xcount=2,  sum1=0 sum2=2820
+  interim B : Xcount=2,  sum1=0 sum2=2948
+  interim B : Xcount=2,  sum1=0 sum2=3077
+  interim B : Xcount=2,  sum1=0 sum2=3207
+  interim B : Xcount=2,  sum1=0 sum2=3338
+  interim B : Xcount=2,  sum1=0 sum2=3470
+  interim : Xcount=2,  sum1=0 sum2=3470
+xcount start 3
+  interim B : Xcount=3,  sum1=0 sum2=16
+  interim B : Xcount=3,  sum1=0 sum2=32
+  interim B : Xcount=3,  sum1=0 sum2=48
+  interim B : Xcount=3,  sum1=0 sum2=64
+  interim B : Xcount=3,  sum1=0 sum2=169
+  interim B : Xcount=3,  sum1=0 sum2=275
+  interim B : Xcount=3,  sum1=0 sum2=382
+  interim B : Xcount=3,  sum1=0 sum2=490
+  interim B : Xcount=3,  sum1=0 sum2=599
+  interim B : Xcount=3,  sum1=0 sum2=709
+  interim B : Xcount=3,  sum1=0 sum2=820
+  interim B : Xcount=3,  sum1=0 sum2=932
+  interim B : Xcount=3,  sum1=0 sum2=1045
+  interim B : Xcount=3,  sum1=0 sum2=1159
+  interim B : Xcount=3,  sum1=0 sum2=1274
+  interim B : Xcount=3,  sum1=0 sum2=1390
+  interim B : Xcount=3,  sum1=0 sum2=1507
+  interim B : Xcount=3,  sum1=0 sum2=1625
+  interim B : Xcount=3,  sum1=0 sum2=1744
+  interim B : Xcount=3,  sum1=0 sum2=1864
+  interim B : Xcount=3,  sum1=0 sum2=1985
+  interim B : Xcount=3,  sum1=0 sum2=2107
+  interim B : Xcount=3,  sum1=0 sum2=2230
+  interim B : Xcount=3,  sum1=0 sum2=2354
+  interim B : Xcount=3,  sum1=0 sum2=2479
+  interim B : Xcount=3,  sum1=0 sum2=2605
+  interim B : Xcount=3,  sum1=0 sum2=2732
+  interim B : Xcount=3,  sum1=0 sum2=2860
+  interim B : Xcount=3,  sum1=0 sum2=2989
+  interim B : Xcount=3,  sum1=0 sum2=3119
+  interim B : Xcount=3,  sum1=0 sum2=3250
+  interim B : Xcount=3,  sum1=0 sum2=3382
+  interim : Xcount=3,  sum1=0 sum2=3382
+xcount start 4
+  interim B : Xcount=4,  sum1=0 sum2=16
+  interim B : Xcount=4,  sum1=0 sum2=32
+  interim B : Xcount=4,  sum1=0 sum2=48
+  interim B : Xcount=4,  sum1=0 sum2=64
+  interim B : Xcount=4,  sum1=0 sum2=80
+  interim B : Xcount=4,  sum1=0 sum2=186
+  interim B : Xcount=4,  sum1=0 sum2=293
+  interim B : Xcount=4,  sum1=0 sum2=401
+  interim B : Xcount=4,  sum1=0 sum2=510
+  interim B : Xcount=4,  sum1=0 sum2=620
+  interim B : Xcount=4,  sum1=0 sum2=731
+  interim B : Xcount=4,  sum1=0 sum2=843
+  interim B : Xcount=4,  sum1=0 sum2=956
+  interim B : Xcount=4,  sum1=0 sum2=1070
+  interim B : Xcount=4,  sum1=0 sum2=1185
+  interim B : Xcount=4,  sum1=0 sum2=1301
+  interim B : Xcount=4,  sum1=0 sum2=1418
+  interim B : Xcount=4,  sum1=0 sum2=1536
+  interim B : Xcount=4,  sum1=0 sum2=1655
+  interim B : Xcount=4,  sum1=0 sum2=1775
+  interim B : Xcount=4,  sum1=0 sum2=1896
+  interim B : Xcount=4,  sum1=0 sum2=2018
+  interim B : Xcount=4,  sum1=0 sum2=2141
+  interim B : Xcount=4,  sum1=0 sum2=2265
+  interim B : Xcount=4,  sum1=0 sum2=2390
+  interim B : Xcount=4,  sum1=0 sum2=2516
+  interim B : Xcount=4,  sum1=0 sum2=2643
+  interim B : Xcount=4,  sum1=0 sum2=2771
+  interim B : Xcount=4,  sum1=0 sum2=2900
+  interim B : Xcount=4,  sum1=0 sum2=3030
+  interim B : Xcount=4,  sum1=0 sum2=3161
+  interim B : Xcount=4,  sum1=0 sum2=3293
+  interim : Xcount=4,  sum1=0 sum2=3293
+xcount start 5
+  interim B : Xcount=5,  sum1=0 sum2=16
+  interim B : Xcount=5,  sum1=0 sum2=32
+  interim B : Xcount=5,  sum1=0 sum2=48
+  interim B : Xcount=5,  sum1=0 sum2=64
+  interim B : Xcount=5,  sum1=0 sum2=80
+  interim B : Xcount=5,  sum1=0 sum2=96
+  interim B : Xcount=5,  sum1=0 sum2=203
+  interim B : Xcount=5,  sum1=0 sum2=311
+  interim B : Xcount=5,  sum1=0 sum2=420
+  interim B : Xcount=5,  sum1=0 sum2=530
+  interim B : Xcount=5,  sum1=0 sum2=641
+  interim B : Xcount=5,  sum1=0 sum2=753
+  interim B : Xcount=5,  sum1=0 sum2=866
+  interim B : Xcount=5,  sum1=0 sum2=980
+  interim B : Xcount=5,  sum1=0 sum2=1095
+  interim B : Xcount=5,  sum1=0 sum2=1211
+  interim B : Xcount=5,  sum1=0 sum2=1328
+  interim B : Xcount=5,  sum1=0 sum2=1446
+  interim B : Xcount=5,  sum1=0 sum2=1565
+  interim B : Xcount=5,  sum1=0 sum2=1685
+  interim B : Xcount=5,  sum1=0 sum2=1806
+  interim B : Xcount=5,  sum1=0 sum2=1928
+  interim B : Xcount=5,  sum1=0 sum2=2051
+  interim B : Xcount=5,  sum1=0 sum2=2175
+  interim B : Xcount=5,  sum1=0 sum2=2300
+  interim B : Xcount=5,  sum1=0 sum2=2426
+  interim B : Xcount=5,  sum1=0 sum2=2553
+  interim B : Xcount=5,  sum1=0 sum2=2681
+  interim B : Xcount=5,  sum1=0 sum2=2810
+  interim B : Xcount=5,  sum1=0 sum2=2940
+  interim B : Xcount=5,  sum1=0 sum2=3071
+  interim B : Xcount=5,  sum1=0 sum2=3203
+  interim : Xcount=5,  sum1=0 sum2=3203
+xcount start 6
+  interim B : Xcount=6,  sum1=0 sum2=16
+  interim B : Xcount=6,  sum1=0 sum2=32
+  interim B : Xcount=6,  sum1=0 sum2=48
+  interim B : Xcount=6,  sum1=0 sum2=64
+  interim B : Xcount=6,  sum1=0 sum2=80
+  interim B : Xcount=6,  sum1=0 sum2=96
+  interim B : Xcount=6,  sum1=0 sum2=112
+  interim B : Xcount=6,  sum1=0 sum2=220
+  interim B : Xcount=6,  sum1=0 sum2=329
+  interim B : Xcount=6,  sum1=0 sum2=439
+  interim B : Xcount=6,  sum1=0 sum2=550
+  interim B : Xcount=6,  sum1=0 sum2=662
+  interim B : Xcount=6,  sum1=0 sum2=775
+  interim B : Xcount=6,  sum1=0 sum2=889
+  interim B : Xcount=6,  sum1=0 sum2=1004
+  interim B : Xcount=6,  sum1=0 sum2=1120
+  interim B : Xcount=6,  sum1=0 sum2=1237
+  interim B : Xcount=6,  sum1=0 sum2=1355
+  interim B : Xcount=6,  sum1=0 sum2=1474
+  interim B : Xcount=6,  sum1=0 sum2=1594
+  interim B : Xcount=6,  sum1=0 sum2=1715
+  interim B : Xcount=6,  sum1=0 sum2=1837
+  interim B : Xcount=6,  sum1=0 sum2=1960
+  interim B : Xcount=6,  sum1=0 sum2=2084
+  interim B : Xcount=6,  sum1=0 sum2=2209
+  interim B : Xcount=6,  sum1=0 sum2=2335
+  interim B : Xcount=6,  sum1=0 sum2=2462
+  interim B : Xcount=6,  sum1=0 sum2=2590
+  interim B : Xcount=6,  sum1=0 sum2=2719
+  interim B : Xcount=6,  sum1=0 sum2=2849
+  interim B : Xcount=6,  sum1=0 sum2=2980
+  interim B : Xcount=6,  sum1=0 sum2=3112
+  interim : Xcount=6,  sum1=0 sum2=3112
+xcount start 7
+  interim B : Xcount=7,  sum1=0 sum2=16
+  interim B : Xcount=7,  sum1=0 sum2=32
+  interim B : Xcount=7,  sum1=0 sum2=48
+  interim B : Xcount=7,  sum1=0 sum2=64
+  interim B : Xcount=7,  sum1=0 sum2=80
+  interim B : Xcount=7,  sum1=0 sum2=96
+  interim B : Xcount=7,  sum1=0 sum2=112
+  interim B : Xcount=7,  sum1=0 sum2=128
+  interim B : Xcount=7,  sum1=0 sum2=237
+  interim B : Xcount=7,  sum1=0 sum2=347
+  interim B : Xcount=7,  sum1=0 sum2=458
+  interim B : Xcount=7,  sum1=0 sum2=570
+  interim B : Xcount=7,  sum1=0 sum2=683
+  interim B : Xcount=7,  sum1=0 sum2=797
+  interim B : Xcount=7,  sum1=0 sum2=912
+  interim B : Xcount=7,  sum1=0 sum2=1028
+  interim B : Xcount=7,  sum1=0 sum2=1145
+  interim B : Xcount=7,  sum1=0 sum2=1263
+  interim B : Xcount=7,  sum1=0 sum2=1382
+  interim B : Xcount=7,  sum1=0 sum2=1502
+  interim B : Xcount=7,  sum1=0 sum2=1623
+  interim B : Xcount=7,  sum1=0 sum2=1745
+  interim B : Xcount=7,  sum1=0 sum2=1868
+  interim B : Xcount=7,  sum1=0 sum2=1992
+  interim B : Xcount=7,  sum1=0 sum2=2117
+  interim B : Xcount=7,  sum1=0 sum2=2243
+  interim B : Xcount=7,  sum1=0 sum2=2370
+  interim B : Xcount=7,  sum1=0 sum2=2498
+  interim B : Xcount=7,  sum1=0 sum2=2627
+  interim B : Xcount=7,  sum1=0 sum2=2757
+  interim B : Xcount=7,  sum1=0 sum2=2888
+  interim B : Xcount=7,  sum1=0 sum2=3020
+  interim : Xcount=7,  sum1=0 sum2=3020
+xcount start 8
+  interim B : Xcount=8,  sum1=0 sum2=16
+  interim B : Xcount=8,  sum1=0 sum2=32
+  interim B : Xcount=8,  sum1=0 sum2=48
+  interim B : Xcount=8,  sum1=0 sum2=64
+  interim B : Xcount=8,  sum1=0 sum2=80
+  interim B : Xcount=8,  sum1=0 sum2=96
+  interim B : Xcount=8,  sum1=0 sum2=112
+  interim B : Xcount=8,  sum1=0 sum2=128
+  interim B : Xcount=8,  sum1=0 sum2=144
+  interim B : Xcount=8,  sum1=0 sum2=254
+  interim B : Xcount=8,  sum1=0 sum2=365
+  interim B : Xcount=8,  sum1=0 sum2=477
+  interim B : Xcount=8,  sum1=0 sum2=590
+  interim B : Xcount=8,  sum1=0 sum2=704
+  interim B : Xcount=8,  sum1=0 sum2=819
+  interim B : Xcount=8,  sum1=0 sum2=935
+  interim B : Xcount=8,  sum1=0 sum2=1052
+  interim B : Xcount=8,  sum1=0 sum2=1170
+  interim B : Xcount=8,  sum1=0 sum2=1289
+  interim B : Xcount=8,  sum1=0 sum2=1409
+  interim B : Xcount=8,  sum1=0 sum2=1530
+  interim B : Xcount=8,  sum1=0 sum2=1652
+  interim B : Xcount=8,  sum1=0 sum2=1775
+  interim B : Xcount=8,  sum1=0 sum2=1899
+  interim B : Xcount=8,  sum1=0 sum2=2024
+  interim B : Xcount=8,  sum1=0 sum2=2150
+  interim B : Xcount=8,  sum1=0 sum2=2277
+  interim B : Xcount=8,  sum1=0 sum2=2405
+  interim B : Xcount=8,  sum1=0 sum2=2534
+  interim B : Xcount=8,  sum1=0 sum2=2664
+  interim B : Xcount=8,  sum1=0 sum2=2795
+  interim B : Xcount=8,  sum1=0 sum2=2927
+  interim : Xcount=8,  sum1=0 sum2=2927
+xcount start 9
+  interim B : Xcount=9,  sum1=0 sum2=16
+  interim B : Xcount=9,  sum1=0 sum2=32
+  interim B : Xcount=9,  sum1=0 sum2=48
+  interim B : Xcount=9,  sum1=0 sum2=64
+  interim B : Xcount=9,  sum1=0 sum2=80
+  interim B : Xcount=9,  sum1=0 sum2=96
+  interim B : Xcount=9,  sum1=0 sum2=112
+  interim B : Xcount=9,  sum1=0 sum2=128
+  interim B : Xcount=9,  sum1=0 sum2=144
+  interim B : Xcount=9,  sum1=0 sum2=160
+  interim B : Xcount=9,  sum1=0 sum2=271
+  interim B : Xcount=9,  sum1=0 sum2=383
+  interim B : Xcount=9,  sum1=0 sum2=496
+  interim B : Xcount=9,  sum1=0 sum2=610
+  interim B : Xcount=9,  sum1=0 sum2=725
+  interim B : Xcount=9,  sum1=0 sum2=841
+  interim B : Xcount=9,  sum1=0 sum2=958
+  interim B : Xcount=9,  sum1=0 sum2=1076
+  interim B : Xcount=9,  sum1=0 sum2=1195
+  interim B : Xcount=9,  sum1=0 sum2=1315
+  interim B : Xcount=9,  sum1=0 sum2=1436
+  interim B : Xcount=9,  sum1=0 sum2=1558
+  interim B : Xcount=9,  sum1=0 sum2=1681
+  interim B : Xcount=9,  sum1=0 sum2=1805
+  interim B : Xcount=9,  sum1=0 sum2=1930
+  interim B : Xcount=9,  sum1=0 sum2=2056
+  interim B : Xcount=9,  sum1=0 sum2=2183
+  interim B : Xcount=9,  sum1=0 sum2=2311
+  interim B : Xcount=9,  sum1=0 sum2=2440
+  interim B : Xcount=9,  sum1=0 sum2=2570
+  interim B : Xcount=9,  sum1=0 sum2=2701
+  interim B : Xcount=9,  sum1=0 sum2=2833
+  interim : Xcount=9,  sum1=0 sum2=2833
+  -- my stored value is: 15 16
+Diosim done.

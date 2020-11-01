@@ -1,0 +1,97 @@
+<?xml version='1.0' ?>
+
+<!-- The main, working, baseline, KiwiC recipe.  Use this one unless you need to change it. -->
+
+
+<recipe name="kiwic00">
+
+   <stage>
+     <cmd>kiwife</cmd>
+     <option> "$require-arg" "root" </option>
+     <defaultsetting> finish false </defaultsetting>
+     <defaultsetting> "array-2d-name" "ARRAY2D" </defaultsetting>
+     <defaultsetting> "kiwic-finish" "disable" </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>repack</cmd>
+     <defaultsetting> split-prefix  CC </defaultsetting>
+   </stage>
+
+   <stage>
+     <!-- C output at this stage will give us a tool that, overall, is just a C# to C convertor. -->
+     <cmd>cgen1</cmd>
+     <stagename>cgen1</stagename>
+     <defaultsetting>cgen1 disable </defaultsetting>
+     <defaultsetting>cpp disable </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>report</cmd>
+     <option> report-filename "obj/prebevsynth.rpt" </option>
+     <option> report-suffix   "-in.xml" </option>
+   </stage>
+
+   <stage>
+     <cmd>bevelab</cmd>
+     <option> bevelab-repack-pc true </option>
+     <option> bevelab-default-pause-mode bblock </option>
+     <option> bevelab-onehot-pc true </option>
+     <option> bevelab-filename "obj/synth.rpt" </option>
+     <option> bevelab-suffix   "-in.xml" </option>
+     <defaultsetting> scheduler none </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>compose</cmd>
+     <option> compose disable </option>
+     <option> compose-filename "obj/compose.rpt" </option>
+     <option> compose-default-pause-mode bblock </option>
+     <option> compose-suffix   "-in.xml" </option>
+     <option> compose-bisim-reduction disable </option>
+     <defaultsetting> scheduler oldsched </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>conerefine</cmd>
+     <stagename>conerefine1</stagename>
+     <defaultsetting> conerefine-loglevel  1 </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>restructure2</cmd>
+     <stagename>restructure2</stagename>
+     <defaultsetting> restructure2 enable </defaultsetting>
+   </stage>
+
+    <stage>
+     <cmd>conerefine</cmd>
+     <stagename>conerefine2</stagename>
+     <defaultsetting> conerefine-loglevel 1  </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>verilog-gen</cmd>
+     <defaultsetting> vnl-default-name DUT.v  </defaultsetting>
+     <defaultsetting> vnl-roundtrip disable </defaultsetting>
+     <defaultsetting> vnl-gatelib NONE </defaultsetting>
+     <defaultsetting> vnl-resets synchronous </defaultsetting>
+     <defaultsetting> vnl-ifshare on </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>cgen2</cmd>
+     <stagename>cgen2</stagename>
+     <defaultsetting>cpp disable </defaultsetting>
+     <defaultsetting>cgen2 disable </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>diosim</cmd>
+     <enabler> "sim" </enabler>
+  </stage>
+
+</recipe>

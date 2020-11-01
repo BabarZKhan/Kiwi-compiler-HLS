@@ -1,0 +1,52 @@
+Kiwi Demo - Test50 starting.
+Kiwi Demo - Test50 phase0 starting.
+  Test50 Remote Status=x, sum= 12345678
+sp: Print data: sharedData[0] = 30
+sp: Print data: sharedData[1] = 31
+sp: Print data: sharedData[2] = 32
+sp: Print data: sharedData[3] = 33
+sp: Print data: sharedData[4] = 34
+sp: Print data: sharedData[5] = 35
+sp: Print data: sharedData[6] = 36
+sp: Print data: sharedData[7] = 37
+sp: Print data: sharedData[8] = 38
+sp: Print data: sharedData[9] = 39
+sp: Print data: sharedData[10] = 40
+sp: Print data: sharedData[11] = 41
+sp: Print data: sharedData[12] = 42
+sp: Print data: sharedData[13] = 43
+sp: Print data: sharedData[14] = 44
+sp: Print data: sharedData[15] = 45
+sp: Print data: sharedData[16] = 46
+sp: Print data: sharedData[17] = 47
+sp: Print data: sharedData[18] = 48
+sp: Print data: sharedData[19] = 49
+sp: Print data: sharedData[20] = 50
+sp: Print data: sharedData[21] = 51
+sp: Print data: sharedData[22] = 52
+sp: Print data: sharedData[23] = 53
+sp: Print data: sharedData[24] = 54
+sp: Print data: sharedData[25] = 55
+sp: Print data: sharedData[26] = 56
+sp: Print data: sharedData[27] = 57
+sp: Print data: sharedData[28] = 58
+sp: Print data: sharedData[29] = 99
+  Test50 fancy iteration=0 rs=I sum=12345678.
+sp: data sum 12345678
+sp: data sum 1375
+sp: data sum 41685
+   point2 I 41685.
+  Test50 fancy iteration=1 rs=I sum=41685.
+sp: data sum 41685
+sp: data sum 1665
+sp: data sum 50385
+   point2 I 50385.
+  Test50 fancy iteration=2 rs=I sum=50385.
+sp: data sum 50385
+sp: data sum 1694
+sp: data sum 51255
+   point2 I 51255.
+Finished main process.
+Test50 starting join.
+Test50 done.
+Diosim done.

@@ -1,0 +1,7 @@
+MONO_PATH=/home/djg11/d320/hprls/kiwipro/kiwic/distro/support mono test40r0.exe
+The size of short is 2.
+The size of int is 4.
+The size of long is 8.
+The 4 bytes of the integer: 00 04 00 00
+The value of the integer: 1024
+Diosim done.

@@ -1,0 +1,25 @@
+Test38r3 start.
+ half lebon0_0=33000
+ half lebon0_1=44000
+ half lebon1_1=44001
+ pre lebon0_0=33000, lebon0_1=44000
+ post simon[0] : lebon[0]=33010 and lebon[1]=33110
+ post duran=900
+ post simon[1] : lebon[0]=33001 and lebon[1]=44001
+ post duran=901
+ post simon[2] : lebon[0]=33002 and lebon[1]=44002
+ post duran=902
+ post simon[0] : lebon[0]=33020 and lebon[1]=33120
+ post duran=900
+ post simon[1] : lebon[0]=33001 and lebon[1]=44001
+ post duran=901
+ post simon[2] : lebon[0]=33002 and lebon[1]=44002
+ post duran=902
+ post simon[0] : lebon[0]=33030 and lebon[1]=33130
+ post duran=900
+ post simon[1] : lebon[0]=33001 and lebon[1]=44001
+ post duran=901
+ post simon[2] : lebon[0]=33002 and lebon[1]=44002
+ post duran=902
+Test38r3 finished.
+Diosim done.

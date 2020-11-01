@@ -1,0 +1,23 @@
+MONO_PATH=/rack-ham/paula1/homedir/home/djg11/d320/hprls/kiwipro/kiwic/distro/support mono test72r1.exe
+Start NativeFifo 72r1 Test
+Enqueue step 0
+Enqueue step 1
+Enqueue step 2
+Enqueue step 3
+Enqueue step 4
+Enqueue step 5
+Enqueue step 6
+Enqueue step 7
+Enqueue step 8
+Enqueue step 9
+Dequeued 101, sofar 101
+Dequeued 102, sofar 203
+Dequeued 103, sofar 306
+Dequeued 104, sofar 410
+Dequeued 105, sofar 515
+Dequeued 106, sofar 621
+Dequeued 107, sofar 728
+Dequeued 108, sofar 836
+Dequeued 109, sofar 945
+Dequeued 110, sofar 1055
+NativeFifo 72r1 Test: End of Demo. rc=1055

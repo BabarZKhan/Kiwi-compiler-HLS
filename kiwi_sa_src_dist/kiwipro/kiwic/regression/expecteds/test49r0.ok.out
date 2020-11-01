@@ -1,0 +1,36 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Kiwi Demo - Test49 starting.
+Kiwi Demo - Test49 phase0 starting.
+data 0  qfp0=333020.000000
+                  qfp1=333019.968750  qfp2=0.000000  qfp3=333019
+data 1  qfp0=336350.200000
+                  qfp1=336350.187500  qfp2=7.123450  qfp3=336350
+data 2  qfp0=339680.400000
+                  qfp1=339680.375000  qfp2=14.246900  qfp3=339680
+data 3  qfp0=343010.600000
+                  qfp1=343010.593750  qfp2=21.370348  qfp3=343010
+data 4  qfp0=346340.800000
+                  qfp1=346340.781250  qfp2=28.493799  qfp3=346340
+data 5  qfp0=349671.000000
+                  qfp1=349670.968750  qfp2=35.617249  qfp3=349670
+Kiwi Demo - Test49 phase1 starting.
+phase1: data 0  is 3.141500
+phase1: data 1  is 314.150000
+phase1: data 2  is -96.858500
+phase1: data 3  is 0.031415
+phase1: data 4  is 103.141500
+phase1: data 5  is 2.710000
+phase1: data 0  is 3.141500
+phase1: data 1  is 31415.000000
+phase1: data 2  is -196.858500
+phase1: data 3  is 0.000314
+phase1: data 4  is 203.141500
+phase1: data 5  is 2.710000
+phase1: data 0  is 3.141500
+phase1: data 1  is 3141500.000000
+phase1: data 2  is -296.858500
+phase1: data 3  is 0.000003
+phase1: data 4  is 303.141500
+phase1: data 5  is 2.710000
+Kiwi Demo - Test49 phase1 finished.
+Test49 done.

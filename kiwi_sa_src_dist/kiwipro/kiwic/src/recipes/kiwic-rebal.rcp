@@ -1,0 +1,79 @@
+<?xml version='1.0' ?>
+<recipe name="kiwic00">
+   <stage>
+     <cmd>kiwife</cmd>
+     <option> "$require-arg" "root" </option>
+     <defaultsetting> finish false </defaultsetting>
+     <defaultsetting> "array-2d-name" "ARRAY2D" </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>repack</cmd>
+     <defaultsetting> split-prefix  CC </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>restructure1</cmd>
+     <defaultsetting> protocol HSIMPLE </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>report</cmd>
+     <option> report-filename "obj/prebevsynth.rpt" </option>
+     <option> report-suffix   "-in.xml" </option>
+   </stage>
+
+   <stage>
+     <cmd>bevelab</cmd>
+     <option> repack-pc true </option>
+     <option> onehot-pc true </option>
+     <option> filename "obj/synth.rpt" </option>
+     <option> suffix   "-in.xml" </option>
+     <defaultsetting> scheduler none </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>compose</cmd>
+     <option> repack-pc true </option>
+     <option> onehot-pc true </option>
+     <option> filename "obj/compose.rpt" </option>
+     <option> suffix   "-in.xml" </option>
+     <option> compose-bisim-reduction disable </option>
+     <defaultsetting> scheduler oldsched </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>conerefine</cmd>
+     <defaultsetting> repack-only  false </defaultsetting>
+     <defaultsetting> split-prefix  QC </defaultsetting>
+     <defaultsetting> conerefine-loglevel  20 </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>restructure2</cmd>
+     <defaultsetting> restructure2 enable </defaultsetting>
+   </stage>
+
+
+   <stage>
+     <cmd>verilog-gen</cmd>
+     <defaultsetting> vnl-default-name DUT.v  </defaultsetting>
+     <defaultsetting> bypass-verilog-roundtrip disable </defaultsetting>
+     <defaultsetting> gatelib NONE </defaultsetting>
+     <defaultsetting> resets synchronous </defaultsetting>
+     <defaultsetting> vnl-ifshare on </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>csharp-gen</cmd>
+     <defaultsetting> csharp-gen disable </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>diosim</cmd>
+     <enabler> "sim" </enabler>
+  </stage>
+
+</recipe>

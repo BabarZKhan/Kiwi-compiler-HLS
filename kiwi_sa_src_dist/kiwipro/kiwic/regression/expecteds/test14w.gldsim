@@ -1,0 +1,17 @@
+  Pre-test ha.left=22, harrow=1001
+  Pre-test hb.left=32, harrow=1003
+First printed value should be 32 32
+  North test14w line1 : left=32
+  North test14w line2 : arrow[1]=1003
+  North test14w line3 : arrow[15]=1004
+  North test14w line1 : left=22
+  North test14w line2 : arrow[1]=1001
+  North test14w line3 : arrow[15]=101002
+  North test14w line1 : left=32
+  North test14w line2 : arrow[1]=1003
+  North test14w line3 : arrow[15]=101004
+  North test14w line1 : left=22
+  North test14w line2 : arrow[1]=1001
+  North test14w line3 : arrow[15]=201002
+End of test14w 0
+Diosim done.

@@ -1,0 +1,12 @@
+Test 39r1 Linked Lists in DRAM Demo. Trees are a simple extension.
+Test 39r1: Freepool created, 100000000 bytes.
+  Runtime Alloc Item 0
+  Runtime Alloc Item 1
+  Runtime Alloc Item 2
+  Runtime Alloc Item 3
+  Readback Item 59
+  Readback Item 56
+  Readback Item 53
+  Readback Item 50
+Test 39r1 Linked List DRAM Demo Finished.
+Diosim done.

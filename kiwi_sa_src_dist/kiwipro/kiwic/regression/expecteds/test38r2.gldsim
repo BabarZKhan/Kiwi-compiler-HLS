@@ -1,0 +1,6 @@
+Test38r2 start.
+ pre lebon=33000, ben=44000
+ post lebon=33001, ben=33101
+ post lebon=33002, ben=33102
+Test38r2 finished.
+Diosim done.

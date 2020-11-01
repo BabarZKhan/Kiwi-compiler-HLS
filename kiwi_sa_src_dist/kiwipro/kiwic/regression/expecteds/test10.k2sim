@@ -1,0 +1,34 @@
+m1 65536
+m2 -65536
+m3 65537
+m4 65535
+m5 -65535
+m6 262144
+m7 16384
+m8 262144
+m9 16384
+m10 16711680
+0 gives 100 and 100
+1 gives 100 and 100
+2 gives 100 and 100
+3 gives 100 and 100
+4 gives 100 and 100
+5 gives 100 and 200
+6 gives 100 and 200
+7 gives 100 and 200
+8 gives 100 and 200
+9 gives 100 and 200
+10 gives 200 and 4332212345600000
+11 gives 200 and 4332212345600000
+  2 to power 5 is 32
+  4 to power 5 is 1024
+  6 to power 5 is 7776
+  8 to power 5 is 32768
+  10 to power 5 is 100000
+  2 processed is 498
+  4 processed is 526
+  6 processed is 639
+  8 processed is 890
+  10 processed is 1333
+Frankly yes or no.
+Diosim done.

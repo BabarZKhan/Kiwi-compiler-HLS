@@ -1,0 +1,10 @@
+Test0 st1
+<><><>> mask: FFFFFFFFFFFFFF00
+Test0 st2
+<><><>> data: 194
+Test0 st3
+v2 5678
+v3 5678
+v2 5678
+v3 5678
+Diosim done.

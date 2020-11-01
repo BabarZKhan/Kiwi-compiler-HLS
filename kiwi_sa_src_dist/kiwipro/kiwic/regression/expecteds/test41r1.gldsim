@@ -1,0 +1,14 @@
+Start Kiwi test41r1
+The value of the integer: 1024
+  readback vv=110 pp=12 qq=52    dd=4 ss=4
+  readback vv=111 pp=13 qq=53    dd=4 ss=8
+  readback vv=112 pp=14 qq=54    dd=3 ss=11
+  readback vv=113 pp=15 qq=55    dd=3 ss=14
+  readback vv=114 pp=16 qq=56    dd=3 ss=17
+  readback vv=115 pp=17 qq=57    dd=3 ss=20
+  readback vv=116 pp=18 qq=58    dd=3 ss=23
+  readback vv=117 pp=19 qq=59    dd=3 ss=26
+  readback vv=118 pp=20 qq=60    dd=3 ss=29
+  readback vv=119 pp=21 qq=61    dd=2 ss=31
+Press any key to exit.
+Diosim done.

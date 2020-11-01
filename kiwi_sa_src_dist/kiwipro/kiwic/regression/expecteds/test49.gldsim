@@ -1,0 +1,36 @@
+Kiwi Demo - Test49 starting.
+Kiwi Demo - Test49 phase0 starting.
+data 0  qfp0=333020.0
+                  qfp1=333020.0  qfp2=0.0  qfp3=333020
+data 1  qfp0=336350.2
+                  qfp1=336350.2  qfp2=7.123449802  qfp3=336350
+data 2  qfp0=339680.4
+                  qfp1=339680.4  qfp2=14.2468996  qfp3=339680
+data 3  qfp0=343010.6
+                  qfp1=343010.6  qfp2=21.37034941  qfp3=343010
+data 4  qfp0=346340.8
+                  qfp1=346340.8  qfp2=28.49379921  qfp3=346340
+data 5  qfp0=349671.0
+                  qfp1=349671.0  qfp2=35.61724901  qfp3=349671
+Kiwi Demo - Test49 phase1 starting.
+phase1: data 0  is 3.1415
+phase1: data 1  is 314.15
+phase1: data 2  is -96.8585
+phase1: data 3  is 0.031415
+phase1: data 4  is 103.1415
+phase1: data 5  is 2.71
+phase1: data 0  is 3.1415
+phase1: data 1  is 31415.0
+phase1: data 2  is -196.8585
+phase1: data 3  is 0.00031415
+phase1: data 4  is 203.1415
+phase1: data 5  is 2.71
+phase1: data 0  is 3.1415
+phase1: data 1  is 3141500.0
+phase1: data 2  is -296.8585
+phase1: data 3  is 3.1415e-06
+phase1: data 4  is 303.1415
+phase1: data 5  is 2.71
+Kiwi Demo - Test49 phase1 finished.
+Test49 done.
+Diosim done.

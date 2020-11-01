@@ -1,0 +1,7 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Test68  starting.
+   Swapsies 3  4  y
+   Swapsies 2  3  y
+   Swapsies 1  4  x
+   Swapsies 0  3  x
+Test68 finished.

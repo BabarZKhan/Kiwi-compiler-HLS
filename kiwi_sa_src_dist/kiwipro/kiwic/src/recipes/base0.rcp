@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<recipe name="base0">
+   <stage>
+     <cmd>kiwife</cmd>
+     <option> "$require-arg" "root" </option>
+   </stage>
+
+   <stage>
+     <cmd>conerefine</cmd>
+     <defaultsetting> repack-only  true </defaultsetting>
+     <defaultsetting> split-prefix  "CC" </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>report</cmd>
+     <option> filename "obj/synth.rpt" </option>
+     <option> suffix   "-in.xml" </option>
+   </stage>
+
+   <stage>
+     <cmd>bevelab</cmd>
+     <option> filename "obj/synth.rpt" </option>
+     <option> suffix   "-in.xml" </option>
+   </stage>
+
+   <stage>
+     <cmd>verilog-gen</cmd>
+     <enabler> "vnl" </enabler>
+     <defaultsetting> bypass-verilog-roundtrip true </defaultsetting>
+     <defaultsetting> root antichrist </defaultsetting>
+     <defaultsetting> gatelib NONE </defaultsetting>
+     <option> "$require-arg" "vnl" </option>
+
+   </stage>
+
+
+</recipe>

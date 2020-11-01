@@ -1,0 +1,32 @@
+Test2a: limit=6
+Note: this test is very fragile owing to races and has completely non-determinstic output on mono - but in hard pause mode the RTL behaviour is stable enough to warrant regression testing.
+Decremented 0
+Decremented 4
+Decremented 3
+Decremented 2
+Decremented 1
+Decremented 0
+Decremented 4
+Decremented 3
+Decremented 2
+Decremented 1
+Decremented 0
+Decremented 4
+Decremented 3
+Decremented 2
+Decremented 1
+Decremented 0
+Decremented 4
+Decremented 3
+Decremented 2
+Decremented 1
+Decremented 0
+Decremented 4
+Decremented 3
+Decremented 2
+Decremented 1
+Decremented 0
+
+Test2a: Finished
+
+Diosim done.

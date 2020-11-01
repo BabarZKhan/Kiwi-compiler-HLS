@@ -1,0 +1,39 @@
+Hello from Test45
+FloatConvTest0: 0  has 12345.6789  
+FloatConvTest0: 1  has 148148.1468  
+FloatConvTest0: 2  has 1777777.762  
+FloatConvTest0: 3  has 21333333.14  
+FloatConvTest1:1.2345e+30  becomes 1.2345e+30
+FloatConvTest1:1.2345e+32  becomes 1.2345e+32
+  0  0
+  1  1
+  2  2
+Bit Convertor Test
+IsLittleEndian=1
+
+   2d
+   fd
+   69
+   b6
+Sum after Int32 -1234567891 sum=585 reconverted=-1234567891
+Test45 iteration 0: checksum = 589
+   2e
+   fd
+   69
+   b6
+Sum after Int32 -1234567890 sum=586 reconverted=-1234567890
+Test45 iteration 1: checksum = 590
+   2f
+   fd
+   69
+   b6
+Sum after Int32 -1234567889 sum=587 reconverted=-1234567889
+Test45 iteration 2: checksum = 591
+   30
+   fd
+   69
+   b6
+Sum after Int32 -1234567888 sum=588 reconverted=-1234567888
+Test45 iteration 3: checksum = 592
+Test45 finished.
+Diosim done.

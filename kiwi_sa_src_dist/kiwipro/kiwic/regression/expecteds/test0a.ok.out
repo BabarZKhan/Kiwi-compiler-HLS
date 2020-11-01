@@ -1,0 +1,65 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Test0 st0
+ st0 byte left shift: 44 44000000
+ st0 byte left shift: 45 45000000
+ st0 byte arith 0: summ=250  prod=0
+ st0 byte arith 1: summ=255  prod=1004
+ st0 byte arith 2: summ=260  prod=2016
+ st0 byte arith 3: summ=265  prod=3036
+Test0 st1
+<><><>> mask: ffffffffffff00ff
+Test0 st2
+<><><>> data: dead00ef
+Test0 st3
+v2 00005678
+v3 00005678
+v2 00005678
+v3 00005678
+Test0 st4
+preloop   shr.uns 0ffffff
+preloop   shr     ffffffff
+
+inloop  shr.uns 00ffffff
+        shr     ffffffff
+inloop  shr.uns 0000ffff
+        shr     ffffffff
+inloop  shr.uns 000000ff
+        shr     ffffffff
+Test0 st5
+shipton test st5a: one's complement  32 101 --> -135
+shipton test st5b: one's complement  32 101 --> 4294967161
+shipton test st5b: one's complement  64 50 --> 4294967180
+Test0 st6
+dfsin ulong to long -ve kk=0 pp=00000000ff000000 8556380160
+dfsin ulong to long -ve kk=1 pp=0000ff0000000000 560750930165760
+dfsin ulong to long -ve kk=2 pp=ff00000000000000 18302628885633695744
+Went -ve
+dfsin ulong to long -ve kk=3 pp=0000000000000000 0
+Test0 st7
+  st7 int abs test -2 2
+               st7 int max test -2 0
+  st7 int abs test -1 1
+               st7 int max test -1 0
+  st7 int abs test 0 0
+               st7 int max test 0 0
+  st7 int abs test 1 1
+               st7 int max test 1 1
+  st7 int abs test 2 2
+               st7 int max test 2 2
+  st7 fp abs test -2 0.900000
+               st7 fp max test -2 1.500000
+  st7 fp abs test -1 0.200000
+               st7 fp max test -1 1.500000
+  st7 fp abs test 0 1.300000
+               st7 fp max test 0 1.500000
+  st7 fp abs test 1 2.400000
+               st7 fp max test 1 2.400000
+  st7 fp abs test 2 3.500000
+               st7 fp max test 2 3.500000
+  st7 fp abs test 3 4.600000
+               st7 fp max test 3 4.600000
+  st7 fp abs test 4 5.700000
+               st7 fp max test 4 5.700000
+  st7 fp abs test 5 6.800000
+               st7 fp max test 5 6.800000
+Test0 complete % %% %%% percent.

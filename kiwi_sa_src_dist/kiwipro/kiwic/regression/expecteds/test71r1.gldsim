@@ -1,0 +1,38 @@
+Start FinallySimple71r1 Test
+FinallySimple71r1 Test: Enter Top Try
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try A pp=0
+FinallySimple71r1 Test: Inner Finally A. pp=0
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try B. pp=1
+FinallySimple71r1 Test: Inner Finally B. pp=1 qqq=42
+FinallySimple71r1 Test: Inner Finally B. pp=1 qqq=930
+FinallySimple71r1 Test: Inner Finally B. pp=1 qqq=1818
+FinallySimple71r1 Test: Inner Finally B. pp=1 qqq=2706
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try A pp=2
+FinallySimple71r1 Test: Inner Finally A. pp=2
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try B. pp=3
+FinallySimple71r1 Test: Inner Finally B. pp=3 qqq=42
+FinallySimple71r1 Test: Inner Finally B. pp=3 qqq=930
+FinallySimple71r1 Test: Inner Finally B. pp=3 qqq=1818
+FinallySimple71r1 Test: Inner Finally B. pp=3 qqq=2706
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try A pp=4
+FinallySimple71r1 Test: Inner Finally A. pp=4
+
+FinallySimple71r1 Test: Enter Loop Body
+FinallySimple71r1 Test: Inner Try B. pp=5
+FinallySimple71r1 Test: Inner Finally B. pp=5 qqq=42
+FinallySimple71r1 Test: Inner Finally B. pp=5 qqq=930
+FinallySimple71r1 Test: Inner Finally B. pp=5 qqq=1818
+FinallySimple71r1 Test: Inner Finally B. pp=5 qqq=2706
+FinallySimple71r1 Test: Final handler
+FinallySimple71r1 Test: End of Demo. rc=505
+Diosim done.

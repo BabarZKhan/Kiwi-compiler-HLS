@@ -1,0 +1,11 @@
+Start FinallySimple71r0 Test
+FinallySimple71r0 Test: Enter Top Try
+FinallySimple71r0 Test: Inner Try A pp=0
+FinallySimple71r0 Test: Inner Try A pp=1
+FinallySimple71r0 Test: Inner Try A pp=2
+FinallySimple71r0 Test: Inner Try A pp=3
+FinallySimple71r0 Test: Inner Try A pp=4
+FinallySimple71r0 Test: Inner Try A pp=5
+FinallySimple71r0 Test: Final handler
+FinallySimple71r0 Test: End of Demo. rc=2101
+Diosim done.

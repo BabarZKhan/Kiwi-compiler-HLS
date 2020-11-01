@@ -1,0 +1,9 @@
+// KiwiC Test 22 - varargs - start
+  val1=: 12
+
+  val1=: 22
+  vals=23  vals=24
+  val1=: 33
+  vals=34  vals=35  vals=45  vals=55  vals=65  vals=75
+// KiwiC Test 22 - varargs - done
+Diosim done.

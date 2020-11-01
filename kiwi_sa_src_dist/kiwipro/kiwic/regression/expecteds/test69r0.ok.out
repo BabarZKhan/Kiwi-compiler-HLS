@@ -1,0 +1,6 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Test69  starting.
+Upper ctor called. Count=1
+Middle ctor called. Count=1
+Lower ctor called. midcount=1
+Test69 finished.

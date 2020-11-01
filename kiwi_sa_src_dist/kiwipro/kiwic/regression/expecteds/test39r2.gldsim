@@ -1,0 +1,13 @@
+Test 39r2 Linked Lists in DRAM Demo - with post-elabotate calls to new(). Trees are a simple extension.
+  Runtime Alloc Item 0
+  Runtime Alloc Item 1
+  Runtime Alloc Item 2
+  Runtime Alloc Item 3
+  Readback Item 209
+  Readback Item 206
+  Readback Item 203
+  Readback Item 200
+  Readback Item 42
+  Readback Item 44
+Test 39r2 Linked List DRAM Demo Finished.
+Diosim done.

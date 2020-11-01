@@ -1,0 +1,5 @@
+grep $@
+# We need to get a  zero return code, even without errors
+echo
+
+ 

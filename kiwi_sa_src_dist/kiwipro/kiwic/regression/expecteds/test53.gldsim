@@ -1,0 +1,19 @@
+Test53 start.
+ modder entry  10 110
+ modder exit   12 111
+ modder entry  11 111
+ modder exit   13 112
+Test53a finished.
+bottom subroutine 3 2
+bottom subroutine 4 2
+middle subroutine 2 2
+bottom subroutine 22 1
+bottom subroutine 23 1
+bottom subroutine 21 2
+bottom subroutine 22 2
+middle subroutine 20 2
+bottom subroutine 202 1
+bottom subroutine 203 1
+Test53b finished.
+Test53 finished.
+Diosim done.

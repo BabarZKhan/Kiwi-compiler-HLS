@@ -1,0 +1,17 @@
+<?xml version='1.0' ?>
+<recipe name="kiwic00">
+   <stage>
+     <cmd>kiwife</cmd>
+     <option> "$require-arg" "root" </option>
+     <defaultsetting> finish false </defaultsetting>
+     <defaultsetting> "array-2d-name" "ARRAY2D" </defaultsetting>
+   </stage>
+
+   <stage>
+     <cmd>diosim</cmd>
+     <enabler> "sim" </enabler>
+     <option> "diosim-vcd" "diosim.vcd" </option>
+     <option> "diosim-granularity" 1 </option>
+  </stage>
+
+</recipe>

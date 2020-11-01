@@ -1,0 +1,15 @@
+Test 39r0 Linked List Simple Demo.  Poolsize=4
+  Created Item 0
+  Created Item 1
+  Created Item 2
+  Created Item 3
+Test 39r0: Freepool created.
+Test 39r0 Linked List Simple Demo.
+  Runtime Alloc Item 0
+  Runtime Alloc Item 1
+  Runtime Alloc Item 2
+  Readback Item 56
+  Readback Item 53
+  Readback Item 50
+Test 39r0 Linked List Simple Demo Finished.
+Diosim done.

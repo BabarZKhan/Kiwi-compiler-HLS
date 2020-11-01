@@ -1,0 +1,24 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Kiwi Demo - Test55 starting.
+Kiwi Demo - Test55_1 starting.
+   ... GetAFun anonymous delegate body arg=5 fv=1
+7
+   ... GetAFun anonymous delegate body arg=6 fv=2
+9
+Test55_1 done.
+Kiwi Demo - Test55_0 starting - function delegate.
+  50 1000 baz_topper
+  yielding 1801547364
+  49 1001 baz_topper
+  yielding 1801547364
+  48 1002 baz_topper
+  yielding 1801547364
+t55_0 done.
+Kiwi Demo - Test55_2 starting - delegate pointer swapping.
+  1936290917 100 boz red
+  1936290917 200 boz green
+  1936290917 101 boz green
+  1936290917 201 boz red
+  1936290917 102 boz red
+  1936290917 202 boz green
+Test55_2 done.

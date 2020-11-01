@@ -1,0 +1,4 @@
+Test37 start. Var(test37/T401/Main/T401/Main/V_0%$star1$/@/SINT%30008%4, &(CT_arr(CTL_net(false, 32, Signed, native), 0)), ..., )
+the toString result is &(CE_subsc(CT_arr(CTL_net(false, 32, Signed, native), 0), Var(T401/TestClass`1/Main/0.13/V_0%$star1$/@/SINT%30020%4, &(CT_arr(CTL_net(false, 32, Signed, native), 0)), ..., ), CE_x(num 1),0^T401/TestClass`1/Main/0.13/V_0))
+Test37 finished.
+Diosim done.

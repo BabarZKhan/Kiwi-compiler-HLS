@@ -1,0 +1,62 @@
+
+KiwiC Release Notes (nearly).
+-----------------------------
+
+There is still no stable or formal release!  But since there are some 'users' now, its only fair to make a few notes here ...
+
+
+
+Alpha 0.3.5 ... 
+   Next will be : The Noc16, revised filesystem stubs and ksubs3 libraries information for Zynq platform added ...
+                : And the demo of using Xilinx hardended FIFOs will be added in test72
+                : Preserve PLI ordering and other fences when pipelined
+		
+Alpha 0.3.6a : 10th April 2018
+   Fixed a bug with finally blocks
+   Provided -kiwife-dynpoly=disable temporary kludge
+
+Alpha 0.3.5j : 28th Feb 2018
+   Reworked SystemC output to work again for some tests.
+   Turn on read merging at restructure.fs Line 2797
+		
+Alpha 0.3.5d : 29th Jan 2018
+   Turned on by default sub-expression sharing (via opx_merge in restructure) for certain array reads.
+   Fixed regression on volatile annotation of static variables
+   
+Alpha 0.3.5b : 10th Jan 2018
+   Added overload disambiguation to Kiwi.Remote so that overloaded methods can be separately compiled.
+
+
+Alpha 0.3.4g : 24th Nov 2017
+   (regression run still stops on test67b owing to missing xml files.)
+   Added support and a regression test for nested try/finally blocks and will next implement exception catching.
+  
+Alpha 0.3.4f2 : 23rd Nov 2017
+   Added K-Means Floating Point demo to the examples folder.
+   Fixed hpr_flt2dbl to preserve Inf and NaN values.
+
+Alpha 0.3.4f1 : 20th Nov 2017
+   Fixed operator precedence in RTL render: binding ordering of xor and bitwise AND.
+   Added K-Means fixed-point example to the example folder
+
+Alpha 0.3.4e : 9th Nov 2017
+   Fixed bug: hll_resets was making all pointer classes look as though they contained null.  I added nat_hllreset attribute to disambiguate
+   such resets, but a better approach will be to use dataflow analysis to detect which are used in reality and also to make the resets later
+   so that the span a register is less meaning increased virtual register utilisation benefit.  Fixed test27 and returned to regression suite.
+
+Alpha 0.3.4d : 7th Nov 2017
+   Fixed bug: hll_resets was clearing tnow meaning that the System.Diagnostics.Stopwatch was not working [ "tnow"; "Kiwi"; "KiwiSystem" ]
+
+Alpha 0.3.4c : 6th Nov 2017
+   Added support for Stopwatch (uncalibrated) to System.Diagnostics.
+   Fixed some no-such-cctor errors resulting from namespace nesting being reversed. Static arrays inside namespaces are now initialised properly.
+   
+Alpha 0.3.4b : 4th Nov 2017
+   The simple FFT example, oldfft, now works but is inefficient in its bitswap approach
+   
+Alpha 0.3.4a : 30th Oct 2017
+   Re-coded the diosim vm2 instance mechanism
+   Altered opath plug in type to operate on a flat list of vm2s instead of just one.
+   Added a simple FFT example which needs some improvements on its bitswap ROM mirroring ...
+   VCD troc (trace event) order warning is flagged on some diosim waveform plots - needs fixing if you use diosim vcd mode.
+   

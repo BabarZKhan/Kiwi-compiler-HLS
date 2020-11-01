@@ -1,0 +1,48 @@
+VCD info: dumpfile vcd.vcd opened for output.
+Test67 starting. Kiwi SqRootTest
+-------------------------------------------
+Test67c  Square Root Double-Precision Test.
+D/P Test Square Root  arg=2.000000  result=1.414214
+            D/P subsback=2.000000
+
+
+
+D/P Test Square Root  arg=200000.000000  result=447.213595
+            D/P subsback=200000.000000
+
+
+
+D/P Test Square Root  arg=10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.000000  result=99999999999999986860582406952576489172979654066176.000000
+            D/P subsback=9999999999999996273691126646141038629436994916907468104967649453468796268545561583004899575439818752.000000
+
+
+
+D/P Test Square Root  arg=5.700000  result=2.387467
+            D/P subsback=5.700000
+
+
+
+-------------------------------------------
+Test67c  Square Root Single-Precision Test.
+S/P Test Square Root  arg=2.000000  result=1.414214
+            S/P subsback=2.000000
+
+
+
+S/P Test Square Root  arg=200000.000000  result=447.213593
+            S/P subsback=199999.984375
+
+
+
+S/P Test Square Root  arg=1000000015047466219876688855040.000000  result=999999986991104.000000
+            S/P subsback=999999939489602493962365435904.000000
+
+
+
+S/P Test Square Root  arg=5.700000  result=2.387467
+            S/P subsback=5.699999
+
+
+
+-------------------------------------------
+Test67 finished.

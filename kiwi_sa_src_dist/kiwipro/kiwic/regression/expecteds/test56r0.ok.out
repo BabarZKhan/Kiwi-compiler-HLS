@@ -1,0 +1,74 @@
+VCD info: dumpfile vcd.vcd opened for output.
+cordic: Testbench start
+Test: input=3fc65717fced55c1 expected=3fc63a1a335aadcd output=3fc63a1a31735958 
+   test 1 hamming error=000000000229f495
+Test: input=3fd65717fced55c1 expected=3fd5e3a82b09bf3e output=3fd5e3a8319e18eb 
+   test 2 hamming error=000000001a97a7d5
+Test: input=3fe0c151fdb20051 expected=3fdfffff91f9aa91 output=3fdfffff9c245acb 
+   test 3 hamming error=000000000dddf05a
+Test: input=3fe65717fced55c1 expected=3fe491b716c242e3 output=3fe491b71758e219 
+   test 4 hamming error=00000000019aa0fa
+Test: input=3febecddfc28ab31 expected=3fe8836f672614a6 output=3fe8836f63ee9a85 
+   test 5 hamming error=0000000004c88e23
+Test: input=3ff0c151fdb20051 expected=3febb67ac40b2bed output=3febb67aacde33c1 
+   test 6 hamming error=0000000068d5182c
+Test: input=3ff38c34fd4fab09 expected=3fee11f6127e28ad output=3fee11f61194a7ed 
+   test 7 hamming error=0000000003ea8f40
+Test: input=3ff65717fced55c1 expected=3fef838b6adffac0 output=3fef838b6f81ba77 
+   test 8 hamming error=00000000055e40b7
+Test: input=3ff921fafc8b0079 expected=3fefffffe1cbd7aa output=3ff000000089705f 
+   test 9 hamming error=001fffffe142a7f5
+Test: input=3ffbecddfc28ab31 expected=3fef838bb0147989 output=3fef838baba2e424 
+   test 10 hamming error=000000001bb69dad
+Test: input=3ffeb7c0fbc655e9 expected=3fee11f692d962b4 output=3fee11f687b139c9 
+   test 11 hamming error=0000000015685b7d
+Test: input=4000c151fdb20051 expected=3febb67b77c0142d output=3febb67b5ad06c50 
+   test 12 hamming error=000000002d10787d
+Test: input=400226c37d80d5ad expected=3fe883709d4ea869 output=3fe88370456af6cc 
+   test 13 hamming error=00000000d8245ea5
+Test: input=40038c34fd4fab09 expected=3fe491b81d72d8e8 output=3fe491b823c85c25 
+   test 14 hamming error=000000003eba84cd
+Test: input=4004f1a67d1e8065 expected=3fe00000ea5f43c8 output=3fe00000fdf09fff 
+   test 15 hamming error=0000000017afdc37
+Test: input=40065717fced55c1 expected=3fd5e3aa4e0590c5 output=3fd5e3aac2bf605b 
+   test 16 hamming error=000000008cbaf09e
+Test: input=4007bc897cbc2b1d expected=3fc63a1d2189552c output=3fc63a1f9cb99ad2 
+   test 17 hamming error=00000002bd30cffe
+Test: input=400921fafc8b0079 expected=3ea6aedffc454b91 output=3ea602ff4171c2ee 
+   test 18 hamming error=0000ac20bd34897f
+Test: input=400a876c7c59d5d5 expected=bfc63a1444ddb37c output=bfc63a14cec41dd2 
+   test 19 hamming error=000000008a19aeae
+Test: input=400becddfc28ab31 expected=bfd5e3a4e68f8f3e output=bfd5e3a59a0b8d04 
+   test 20 hamming error=000000017c84023a
+Test: input=400d524f7bf7808d expected=bfdffffd494cf96b output=bfdffffd33d06fa2 
+   test 21 hamming error=000000007a9c96c9
+Test: input=400eb7c0fbc655e9 expected=bfe491b61cb9a3d3 output=bfe491b609d6874f 
+   test 22 hamming error=00000000156f249c
+Test: input=40100e993dca95a3 expected=bfe8836eb2dcf815 output=bfe8836e82723e3e 
+   test 23 hamming error=0000000030aec62b
+Test: input=4010c151fdb20051 expected=bfebb67a740aae32 output=bfebb679fbb358f7 
+   test 24 hamming error=000000038fb9f6c5
+Test: input=4011740abd996aff expected=bfee11f5912d2157 output=bfee11f599525494 
+   test 25 hamming error=00000000087f75c3
+Test: input=401226c37d80d5ad expected=bfef838b1ac64afc output=bfef838b336090cb 
+   test 26 hamming error=0000000029a6da37
+Test: input=4012d97c3d68405b expected=bfefffffc2e5dc8f output=bff000000089705f 
+   test 27 hamming error=001fffffc26cacd0
+Test: input=40138c34fd4fab09 expected=bfef838b5ea2e7ea output=bfef838beafcb00c 
+   test 28 hamming error=00000000b45e57e6
+Test: input=40143eedbd3715b7 expected=bfee11f7112dae27 output=bfee11f702194e9f 
+   test 29 hamming error=000000001334e0b8
+Test: input=4014f1a67d1e8065 expected=bfebb67c2c31cb4a output=bfebb67c0ae8665b 
+   test 30 hamming error=0000000026d9ad11
+Test: input=4015a45f3d05eb13 expected=bfe883716e6fd781 output=bfe8837126e75313 
+   test 31 hamming error=0000000048888492
+Test: input=40165717fced55c1 expected=bfe491b9cd1b5d56 output=bfe491b93370786c 
+   test 32 hamming error=00000000fe6b253a
+Test: input=401709d0bcd4c06f expected=bfe000021d0ca30d output=bfe000022cbc31db 
+   test 33 hamming error=0000000031b092d6
+Test: input=4017bc897cbc2b1d expected=bfd5e3ad0a69caf7 output=bfd5e3ad582c2ac5 
+   test 34 hamming error=000000005245e032
+Test: input=40186f423ca395cb expected=bfc63a23c48863dd output=bfc63a24fb1d535e 
+   test 35 hamming error=000000073f953083
+Result: 0/36
+cordic: Testbench finished

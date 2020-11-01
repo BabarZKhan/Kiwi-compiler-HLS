@@ -1,0 +1,26 @@
+#!/bin/sh
+# A shellscript wrapper that invokes the main binary (cil pe binary) for KiwiC.
+# The dll's needed will be in the same folder as the kiwic.exe and the recipe and any other supporting files found relative to it.
+
+
+# Can use mono or mono-sgen to select gc. sgen is probably a lot better for FSharp but might still have the odd bug?
+
+# profile on
+# --profile=default:alloc --profile=default:stat
+# mprof-report output.mlpd  --profile=log
+mono  --gc=sgen $HPRLS/kiwipro/kiwic/kdistro/lib/kiwic.exe "$@"
+#--trace=cilnorm
+#exec 
+
+
+
+
+# Old:
+# export MONO_PATH=$MONO_PATH:/usr/local/FSharp-1.9.7.8/lib  An OLD version - wont need provided FSharpCore.dll is somewhere around (e.g. copied to kiwic/distro/lib).
+# e.g
+# openat(AT_FDCWD, "/usr/lib/mono/gac/FSharp.Core/4.4.0.0__b03f5f7f11d50a3a/FSharp.Core.dll", O_RDONLY) = 3.
+# If having a problem, check that someone has not previously solved it by copying these files into your
+# distro/lib folder and now those versions are nolonger current yet are being found in peference to those in /usr/lib.
+
+
+# eof
