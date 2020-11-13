@@ -8,5 +8,4 @@ The Kiwi project aims to make reconfigurable computing technology like Field Pro
 # Asymptotic Background Motivation for FPGA Computing
 The Von Neumann computer has hit a wall in terms of increasing clock frequency. It is widely accepted that Parallel Computing is the most energy-efficient way forward. The FPGA is intrinsically massively-parallel and can exploit the abundant transistor count of contemporary VLSI. Andre DeHon points out that the Von Neumann architecture no longer addresses the relevant problem: he writes "Stored-program processors are about compactness, fitting the computation into the minimum area possible".
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+
