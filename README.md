@@ -1,8 +1,6 @@
 # Kiwi-compiler-HLS
 
 # Overview
-Kiwi is open source: you can download a source snapshot from HERE. (However there are still many bugs and a stable release is a few month's away!). Demo at FPL 2017, September, Ghent.
-
 The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages.
 
 # Asymptotic Background Motivation for FPGA Computing
