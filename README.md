@@ -1,18 +1,20 @@
-# Kiwi-compiler-HLS
-Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library [0].
+**NOTE** 
+Please see below the **References** for more information from the original website of **David Greaves**.
 
-**Please** see below the **References** for more information
+# Kiwi-compiler-HLS
+Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library [1].
+
 
 # Overview
-The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages [0].
+The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages [1].
 
 # Asymptotic Background Motivation for FPGA Computing
-The Von Neumann computer has hit a wall in terms of increasing clock frequency. It is widely accepted that Parallel Computing is the most energy-efficient way forward. The FPGA is intrinsically massively-parallel and can exploit the abundant transistor count of contemporary VLSI. Andre DeHon points out that the Von Neumann architecture no longer addresses the relevant problem: he writes "Stored-program processors are about compactness, fitting the computation into the minimum area possible" [0].
+The Von Neumann computer has hit a wall in terms of increasing clock frequency. It is widely accepted that Parallel Computing is the most energy-efficient way forward. The FPGA is intrinsically massively-parallel and can exploit the abundant transistor count of contemporary VLSI. Andre DeHon points out that the Von Neumann architecture no longer addresses the relevant problem: he writes "Stored-program processors are about compactness, fitting the computation into the minimum area possible" [1].
 
 
 # Why is computing on an FPGA becoming a good idea ?
 
-Spatio-Parallel processing uses less energy than equivalent temporal processing (ie at higher clock rates) for various reasons. David Greaves gives nine [0]:
+Spatio-Parallel processing uses less energy than equivalent temporal processing (ie at higher clock rates) for various reasons. David Greaves gives nine [1]:
 
 1. Pollack's rule states that energy use in a Von Neumann CPU grows with square of its IPC. But the FPGA with a static schedule moves the out-of-order overheads to  
    compile time.
