@@ -8,7 +8,7 @@ Kiwi is a High-Level Synthesis (HLS) system that primarily generates FPGA design
 
 Compared with existing high-level synthesis tools, KiwiC supports a wider subset of standard programming language features. In particular, it supports multi-dimensional arrays, threading, file-server I/O, object management and limited recursion. Release 1 of KiwiC supports static heap management, where all memory structures are allocated at compile-time and permanently allocated to on-FPGA RAM or external DRAM. Release 2 of KiwiC, which has had some successful tests already, supports arbitrary heap-allocation at run time but does not implement garbage collection.
 
-The Kiwi performance predictor is another important design tool, enabling HPC users to explore the expected speed up of their application as the modify it, without having to wait for multi-hour FPGA compilations in each development iteration.
+The Kiwi performance predictor is another important design tool, enabling HPC users to explore the expected speed up of their application as the modify it, without having to wait for multi-hour FPGA compilations in each development iteration [2].
 
 
 # Overview
@@ -36,15 +36,15 @@ Spatio-Parallel processing uses less energy than equivalent temporal processing 
 
 # Scientific Users
 
- It is widely accepted that many problems in scientific computing can be vastly accelerated using either FPGA or GPU execution resources. Also, the FPGA approach in particular leads generally to a significant saving in execution energy. The product of the two gains can be typically one thousand fold [0].
+ It is widely accepted that many problems in scientific computing can be vastly accelerated using either FPGA or GPU execution resources. Also, the FPGA approach in particular leads generally to a significant saving in execution energy. The product of the two gains can be typically one thousand fold [1].
 
-Kiwi provides acceleration for multi-threaded (parallel) programs provided they can be converted to .NET bytecode. Originating from Microsoft, the .NET (also known as CIL) is a well-engineered, general purpose intermediate code that runs on many platforms, including mono/linux [0].
+Kiwi provides acceleration for multi-threaded (parallel) programs provided they can be converted to .NET bytecode. Originating from Microsoft, the .NET (also known as CIL) is a well-engineered, general purpose intermediate code that runs on many platforms, including mono/linux [1].
 
 # Kiwi USPs - Unique Selling Points
 
-There have been numerous high-level synthesis (HLS) projects in recent decades. Finally HLS has come of age, with all FPGA and EDA vendors offering HLS products. Nearly all of the prior work has used C, C++ or SystemC as the source HLL. (Historical note: Greaves CTOV compiler from 1995 is now owned by Synopsys Greaves-CTOV-1995 via the Tenison EDA sale.) [0]
+There have been numerous high-level synthesis (HLS) projects in recent decades. Finally HLS has come of age, with all FPGA and EDA vendors offering HLS products. Nearly all of the prior work has used C, C++ or SystemC as the source HLL. (Historical note: Greaves CTOV compiler from 1995 is now owned by Synopsys Greaves-CTOV-1995 via the Tenison EDA sale.) [1]
 
-It is widely accepted that C# and mono/dotnet provide a significant leg up compared with C++ owing to crystal clear semantics, selectively checked overflows, neat higher-order functions and delegates, amenability to compiler optimisations and automated refactoring, garbage management, versioned assemblies and so on. Many of these benefits are most strongly felt with parallel programs. Also, the LINQ/Dryad extension is a clean route for manual invocations of accelerators [0].
+It is widely accepted that C# and mono/dotnet provide a significant leg up compared with C++ owing to crystal clear semantics, selectively checked overflows, neat higher-order functions and delegates, amenability to compiler optimisations and automated refactoring, garbage management, versioned assemblies and so on. Many of these benefits are most strongly felt with parallel programs. Also, the LINQ/Dryad extension is a clean route for manual invocations of accelerators [1].
 
 The Kiwi system has the following USPs compared with most/all other HLS tools:
 
@@ -77,6 +77,22 @@ Although Kiwi is a tool that mainly/essentially works, a lot of further developm
 1. Dataflow (VSFG) execution engine,
 1. Kiwi-2 full support for run-time dynamic storage allocation.
 
-# References
-[0] https://www.cl.cam.ac.uk/~djg11/kiwi/
+# Kiwi Use Cases
 
+1. Kiwi can be used for generating custom accelerators to be embedded in other systems or it can be used as an execution platform for a complete scientific application.
+
+1. The KiwiC compiler operates in several design styles. These vary in the amount of control the user has over the mapping of work to hardware clock cycles and the rate at which the resulting system can accept new input arguments.
+
+1. Classical HLS generates a custom datapath and controlling sequencer for an application. The application may run once and exit or be organised as a server that goes busy when given new input data.
+
+1. At the other extreme, we can generate a fully-pipelined, fixed-latency stream processor that tends not to have a controlling sequencer, but which instead relies on  predicated execution and a little backwards and forwards forwarding along its pipeline.
+
+1. In all uses cases, the user's application is first coded in C# and can be developed and tested on the user's workstation using Visual Studio or Mono.
+
+1. When high performance is required, the self-same binary file is further compiled using KiwiC for programmable hardware FPGAs.
+
+1. FPGAs can use as little as 1/1000th of the energy and run 100 times faster than standard workstations. An everyday use of a hardware accelerator is the MPEG compression on a smart phone. This would instantly flatten the battery if done in software instead!
+
+# References
+[1] https://www.cl.cam.ac.uk/~djg11/kiwi/
+[2] https://www.cl.cam.ac.uk/research/srg/han/hprls/orangepath/kiwic.html
