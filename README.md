@@ -53,3 +53,6 @@ The Kiwi system has the following USPs compared with most/all other HLS tools:
 1. Some recursive programs are supported (unlimited recursion again in the future),
 1. Compile on linux or Windows with existing substrate templates for Zynq, VC-707 and NetFPGA.
 
+# References
+[0] https://www.cl.cam.ac.uk/~djg11/kiwi/
+
