@@ -93,6 +93,14 @@ Although Kiwi is a tool that mainly/essentially works, a lot of further developm
 
 1. FPGAs can use as little as 1/1000th of the energy and run 100 times faster than standard workstations. An everyday use of a hardware accelerator is the MPEG compression on a smart phone. This would instantly flatten the battery if done in software instead! [2]
 
+1. Kiwi-HPC: High-performance computing or scientific acceleration [2].
+
+1. ASIC hard-core generation for standard algorithms that are to be implemented in silicon, such as MPEG compression [2].
+
+1. Routing, filtering and profiling logic for software-defined networking [2].
+
+1. Rapid transaction processing and hardware implementation of automated trading algorithms [2].
+
 # Kiwi Hardware Server and Real-Time Accelerator Synthesis
 
 1. When generating a real-time accelerator, a C# function (method with arguments and return value) is designated by the user as the target root, either using a C# attribute or a command line flag to the KiwiC compiler. The user may also state the maximum processing latency. He will also typically state the reissue frequency, which could be once per clock cycle and whether stalls (flow control) is allowed [2].
@@ -109,9 +117,13 @@ Although Kiwi is a tool that mainly/essentially works, a lot of further developm
 
 1. Kiwi works very well on intensive CPU-bound applications: particularly those that do a lot of bit-level operation and not much floating point. Typical examples are encryption, hashing and linear programming. The latest FPGAs now have much better quality floating-point support and this has recently extended the class of applications that benefit [2].
 
-Kiwi is a form of acceleration for scientific applications and parallel programming. It uses the parallel constructs of the C# language and dotnet runtime. Specifically, Kiwi consists of a run-time library for native simulation of hardware descriptions within C# and the KiwiC compiler that generates RTL for FPGA from constrained/stylised .net bytecode [2].
+1. Kiwi is a form of acceleration for scientific applications and parallel programming. It uses the parallel constructs of the C# language and dotnet runtime. Specifically, Kiwi consists of a run-time library for native simulation of hardware descriptions within C# and the KiwiC compiler that generates RTL for FPGA from constrained/stylised .net bytecode [2].
 
-Or in other words: Kiwi is developing a methodology for algorithm acceleration using parallel programming and the C# language. Specifically, Kiwi consists of a run-time library for hardware FPGA execution of algorithms expressed within C# and a compiler, KiwiC, that converts dotnet bytecode into Verilog RTL for further compilation for FPGA execution. In the future, custom domain-specific front ends that generate dotnet bytecode can be used [2].
+1. Or in other words: Kiwi is developing a methodology for algorithm acceleration using parallel programming and the C# language. Specifically, Kiwi consists of a run-time library for hardware FPGA execution of algorithms expressed within C# and a compiler, KiwiC, that converts dotnet bytecode into Verilog RTL for further compilation for FPGA execution. In the future, custom domain-specific front ends that generate dotnet bytecode can be used [2].
+
+
+
+
 
 
 # References
