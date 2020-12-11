@@ -1,16 +1,18 @@
 # Kiwi-compiler-HLS
-Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library.
+Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library [0].
+
+**Please** see below the **References** for more information
 
 # Overview
-The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages.
+The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages [0].
 
 # Asymptotic Background Motivation for FPGA Computing
-The Von Neumann computer has hit a wall in terms of increasing clock frequency. It is widely accepted that Parallel Computing is the most energy-efficient way forward. The FPGA is intrinsically massively-parallel and can exploit the abundant transistor count of contemporary VLSI. Andre DeHon points out that the Von Neumann architecture no longer addresses the relevant problem: he writes "Stored-program processors are about compactness, fitting the computation into the minimum area possible".
+The Von Neumann computer has hit a wall in terms of increasing clock frequency. It is widely accepted that Parallel Computing is the most energy-efficient way forward. The FPGA is intrinsically massively-parallel and can exploit the abundant transistor count of contemporary VLSI. Andre DeHon points out that the Von Neumann architecture no longer addresses the relevant problem: he writes "Stored-program processors are about compactness, fitting the computation into the minimum area possible" [0].
 
 
 # Why is computing on an FPGA becoming a good idea ?
 
-Spatio-Parallel processing uses less energy than equivalent temporal processing (ie at higher clock rates) for various reasons. David Greaves gives nine:
+Spatio-Parallel processing uses less energy than equivalent temporal processing (ie at higher clock rates) for various reasons. David Greaves gives nine [0]:
 
 1. Pollack's rule states that energy use in a Von Neumann CPU grows with square of its IPC. But the FPGA with a static schedule moves the out-of-order overheads to  
    compile time.
@@ -26,15 +28,15 @@ Spatio-Parallel processing uses less energy than equivalent temporal processing 
 
 # Scientific Users
 
- It is widely accepted that many problems in scientific computing can be vastly accelerated using either FPGA or GPU execution resources. Also, the FPGA approach in particular leads generally to a significant saving in execution energy. The product of the two gains can be typically one thousand fold.
+ It is widely accepted that many problems in scientific computing can be vastly accelerated using either FPGA or GPU execution resources. Also, the FPGA approach in particular leads generally to a significant saving in execution energy. The product of the two gains can be typically one thousand fold [0].
 
-Kiwi provides acceleration for multi-threaded (parallel) programs provided they can be converted to .NET bytecode. Originating from Microsoft, the .NET (also known as CIL) is a well-engineered, general purpose intermediate code that runs on many platforms, including mono/linux.
+Kiwi provides acceleration for multi-threaded (parallel) programs provided they can be converted to .NET bytecode. Originating from Microsoft, the .NET (also known as CIL) is a well-engineered, general purpose intermediate code that runs on many platforms, including mono/linux [0].
 
 # Kiwi USPs - Unique Selling Points
 
-There have been numerous high-level synthesis (HLS) projects in recent decades. Finally HLS has come of age, with all FPGA and EDA vendors offering HLS products. Nearly all of the prior work has used C, C++ or SystemC as the source HLL. (Historical note: Greaves CTOV compiler from 1995 is now owned by Synopsys Greaves-CTOV-1995 via the Tenison EDA sale.)
+There have been numerous high-level synthesis (HLS) projects in recent decades. Finally HLS has come of age, with all FPGA and EDA vendors offering HLS products. Nearly all of the prior work has used C, C++ or SystemC as the source HLL. (Historical note: Greaves CTOV compiler from 1995 is now owned by Synopsys Greaves-CTOV-1995 via the Tenison EDA sale.) [0]
 
-It is widely accepted that C# and mono/dotnet provide a significant leg up compared with C++ owing to crystal clear semantics, selectively checked overflows, neat higher-order functions and delegates, amenability to compiler optimisations and automated refactoring, garbage management, versioned assemblies and so on. Many of these benefits are most strongly felt with parallel programs. Also, the LINQ/Dryad extension is a clean route for manual invocations of accelerators.
+It is widely accepted that C# and mono/dotnet provide a significant leg up compared with C++ owing to crystal clear semantics, selectively checked overflows, neat higher-order functions and delegates, amenability to compiler optimisations and automated refactoring, garbage management, versioned assemblies and so on. Many of these benefits are most strongly felt with parallel programs. Also, the LINQ/Dryad extension is a clean route for manual invocations of accelerators [0].
 
 The Kiwi system has the following USPs compared with most/all other HLS tools:
 
