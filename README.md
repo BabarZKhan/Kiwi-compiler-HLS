@@ -79,19 +79,40 @@ Although Kiwi is a tool that mainly/essentially works, a lot of further developm
 
 # Kiwi Use Cases
 
-1. Kiwi can be used for generating custom accelerators to be embedded in other systems or it can be used as an execution platform for a complete scientific application.
+1. Kiwi can be used for generating custom accelerators to be embedded in other systems or it can be used as an execution platform for a complete scientific application [2].
 
-1. The KiwiC compiler operates in several design styles. These vary in the amount of control the user has over the mapping of work to hardware clock cycles and the rate at which the resulting system can accept new input arguments.
+1. The KiwiC compiler operates in several design styles. These vary in the amount of control the user has over the mapping of work to hardware clock cycles and the rate at which the resulting system can accept new input arguments [2].
 
-1. Classical HLS generates a custom datapath and controlling sequencer for an application. The application may run once and exit or be organised as a server that goes busy when given new input data.
+1. Classical HLS generates a custom datapath and controlling sequencer for an application. The application may run once and exit or be organised as a server that goes busy when given new input data [2].
 
-1. At the other extreme, we can generate a fully-pipelined, fixed-latency stream processor that tends not to have a controlling sequencer, but which instead relies on  predicated execution and a little backwards and forwards forwarding along its pipeline.
+1. At the other extreme, we can generate a fully-pipelined, fixed-latency stream processor that tends not to have a controlling sequencer, but which instead relies on  predicated execution and a little backwards and forwards forwarding along its pipeline [2].
 
-1. In all uses cases, the user's application is first coded in C# and can be developed and tested on the user's workstation using Visual Studio or Mono.
+1. In all uses cases, the user's application is first coded in C# and can be developed and tested on the user's workstation using Visual Studio or Mono [2].
 
-1. When high performance is required, the self-same binary file is further compiled using KiwiC for programmable hardware FPGAs.
+1. When high performance is required, the self-same binary file is further compiled using KiwiC for programmable hardware FPGAs [2].
 
-1. FPGAs can use as little as 1/1000th of the energy and run 100 times faster than standard workstations. An everyday use of a hardware accelerator is the MPEG compression on a smart phone. This would instantly flatten the battery if done in software instead!
+1. FPGAs can use as little as 1/1000th of the energy and run 100 times faster than standard workstations. An everyday use of a hardware accelerator is the MPEG compression on a smart phone. This would instantly flatten the battery if done in software instead! [2]
+
+# Kiwi Hardware Server and Real-Time Accelerator Synthesis
+
+1. When generating a real-time accelerator, a C# function (method with arguments and return value) is designated by the user as the target root, either using a C# attribute or a command line flag to the KiwiC compiler. The user may also state the maximum processing latency. He will also typically state the reissue frequency, which could be once per clock cycle and whether stalls (flow control) is allowed [2].
+
+1. For a real-time accelerator, multiple 'calls' to the designated function are being evaluated concurrently in the generated hardware. Operations on mutable state, including static RAMs and DRAM are allowed, but care must be taken over the way multiple executions appear to be interleaved, just as care is needed with re-entrant, multithreaded software operating on shared variables. Local variables are private to each invokation [2].
+
+1. Note: real-time server mode is being implemented 3Q16. The prior 'hardware server' RPC-based implementation (LINK) is non-rentrant and does not enforce hard real time [2].
+
+# Accelerating CPU-bound Applications
+
+1. Applications that do not involve much I/O are always good candidates for FPGA execution since FPGA I/O performance and facilities have generally been inferior compared with standard processors, such an x86 motherboard [2].
+
+1. Additionaly, applications that do not require a great deal of memory are also ideal for FPGA, since the FPGA DRAM controllers tend to be a little behind those on the latest x86 motherboards. However, many FPGAs now have considerable on-chip static RAM and fairly high bandwidth connection to larger co-located static RAMs, so memory footprint is not such an issue [2].
+
+1. Kiwi works very well on intensive CPU-bound applications: particularly those that do a lot of bit-level operation and not much floating point. Typical examples are encryption, hashing and linear programming. The latest FPGAs now have much better quality floating-point support and this has recently extended the class of applications that benefit [2].
+
+Kiwi is a form of acceleration for scientific applications and parallel programming. It uses the parallel constructs of the C# language and dotnet runtime. Specifically, Kiwi consists of a run-time library for native simulation of hardware descriptions within C# and the KiwiC compiler that generates RTL for FPGA from constrained/stylised .net bytecode [2].
+
+Or in other words: Kiwi is developing a methodology for algorithm acceleration using parallel programming and the C# language. Specifically, Kiwi consists of a run-time library for hardware FPGA execution of algorithms expressed within C# and a compiler, KiwiC, that converts dotnet bytecode into Verilog RTL for further compilation for FPGA execution. In the future, custom domain-specific front ends that generate dotnet bytecode can be used [2].
+
 
 # References
 [1] https://www.cl.cam.ac.uk/~djg11/kiwi/
