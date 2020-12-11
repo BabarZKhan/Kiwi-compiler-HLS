@@ -57,6 +57,20 @@ The Kiwi system has the following USPs compared with most/all other HLS tools:
 1. Some recursive programs are supported (unlimited recursion again in the future),
 1. Compile on linux or Windows with existing substrate templates for Zynq, VC-707 and NetFPGA.
 
+# Other Current Developments
+Although Kiwi is a tool that mainly/essentially works, a lot of further development is envisioned. Apart from bug fixing, the main development/research areas for Kiwi at the moment are:
+
+1. Even higher performance (mostly through enhanced, profile-directed tuning),
+1. Spatially-aware register colouring,
+1. Accurate performance prediction,
+1. Custom-width floating point,
+1. Better support for C# structs (as opposed to C# classes),
+1. DRAM to cache prefetch,
+1. Better debug support (including preserving vsibility name of C# local variable names),
+1. Easier co-design when part of the application still runs under mono/Windows,
+1. Dataflow (VSFG) execution engine,
+1. Kiwi-2 full support for run-time dynamic storage allocation.
+
 # References
 [0] https://www.cl.cam.ac.uk/~djg11/kiwi/
 
