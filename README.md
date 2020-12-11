@@ -1,8 +1,14 @@
 # NOTE 
-Please see below the **References** for more information from the original website of **David Greaves**.
+Please see below the **References** for more information from the original website of **David Greaves** (the main developer of Kiwi).
 
 # Kiwi-compiler-HLS
 Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library [1].
+
+Kiwi is a High-Level Synthesis (HLS) system that primarily generates FPGA designs from C# source code.
+
+Compared with existing high-level synthesis tools, KiwiC supports a wider subset of standard programming language features. In particular, it supports multi-dimensional arrays, threading, file-server I/O, object management and limited recursion. Release 1 of KiwiC supports static heap management, where all memory structures are allocated at compile-time and permanently allocated to on-FPGA RAM or external DRAM. Release 2 of KiwiC, which has had some successful tests already, supports arbitrary heap-allocation at run time but does not implement garbage collection.
+
+The Kiwi performance predictor is another important design tool, enabling HPC users to explore the expected speed up of their application as the modify it, without having to wait for multi-hour FPGA compilations in each development iteration.
 
 
 # Overview
