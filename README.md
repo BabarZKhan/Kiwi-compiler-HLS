@@ -1,4 +1,5 @@
 # Kiwi-compiler-HLS
+Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by David Greaves (UoCCL) and Satnam Singh (MRL). Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library.
 
 # Overview
 The Kiwi project aims to make reconfigurable computing technology like Field Programmable Gate Arrays (FPGAs) more accessible to mainstream programmers. FPGAs have a huge potential for quickly performing many interesting computations in parallel but their exploitation by computer programmers is limited by the need to think like a hardware engineer and the need to use hardware description languages rather than conventional programming languages.
