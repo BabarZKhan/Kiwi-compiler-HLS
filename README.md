@@ -1,4 +1,4 @@
-**NOTE** 
+# NOTE 
 Please see below the **References** for more information from the original website of **David Greaves**.
 
 # Kiwi-compiler-HLS
