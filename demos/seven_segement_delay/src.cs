@@ -1,43 +1,58 @@
-﻿// (C) 2003-17, DJ Greaves, University of Cambridge, Computer Laboratory.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met: redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer;
-// redistributions in binary form must reproduce the above copyright
-// notice, this list of conditions and the following disclaimer in the
-// documentation and/or other materials provided with the distribution;
-// neither the name of the copyright holders nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+﻿//
+// Kiwi Scientific Acceleration - Simple 7-segment display driver - net level
+// (C) 2008 D J Greaves, University of Cambridge Computer Laboratory.
+
+// 
 
 
+using System;
+using System.Text;
+using KiwiSystem;
 
 
-using System; //NameSpace
-class TimesTable
+public static class seven_segment
 {
-    static int limit = 5;
-    public static void Main()
-    {
-        int i, j;
- 	Console.WriteLine("Times Table Up To " + limit);
-	for (i=1;i<=limit;i++)
-	{
-   	  for (j=1;j<=limit;j++) Console.Write(i*j + " ");
-     	  Console.WriteLine("");
-	}
-    }
-}
+  const int n_digits = 4;
+  
+   
+  [Kiwi.InputBitPort("clear")] static bool clear;
+  [Kiwi.OutputWordPort("segments")] static uint segments;
+  [Kiwi.OutputWordPort("strobes")] static uint strobes;
+
+  // Digit data in an array
+  static int [] digit_data = new int [n_digits];
+
+  // Seven segment character set ROM
+  // Digits 0-9 and a minus sign. Bit g is lsb, zero for on.
+  static int [] cbg_seven_seg = new int [] { 0x01, 0x4f, 0x12, 0x06, 0x4c, 0x24, 0x60, 0x0f, 0x00, 0x0c, 0x7E };
+
+
+  static int seven_seg_encode_data(int d)
+  {
+    return cbg_seven_seg[d];
+  }
+
+
+  static int digit_on_display = 0;
+
+
+  static void scan()
+  {
+    digit_on_display = (digit_on_display + 1) % n_digits;
+    strobes = 1u << digit_on_display;
+    segments = (uint)(seven_seg_encode_data(digit_data[digit_on_display]));
+    for (int delay=0;delay<4; delay++) Kiwi.Pause();
+  }
+
+
+  static public void reset_data()
+  {
+    for (int i=0; i < n_digits; i++)
+      {
+	digit_data[i] = 0;	  
+      }
+  }
+
+  static void increment_bcd()
+  {
+    for (int d=0; d
