@@ -26,18 +26,23 @@
 
 
 
-using System; //NameSpace
-class TimesTable
-{
-    static int limit = 5;
-    public static void Main()
-    {
-        int i, j;
- 	Console.WriteLine("Times Table Up To " + limit);
-	for (i=1;i<=limit;i++)
-	{
-   	  for (j=1;j<=limit;j++) Console.Write(i*j + " ");
-     	  Console.WriteLine("");
-	}
-    }
-}
+
+
+
+static void t55_0()
+  {
+    Console.WriteLine("Kiwi Demo - Test55_0 starting - function delegate.");    
+    Func<int, int, string> baz_topper = delegate(int var1, int var2)
+      {	Console.WriteLine("  {1} {0} baz_topper", var1, var2);
+	return "kandy";
+      };
+
+    Kiwi.Pause();
+    for(int pp=0; pp<3; pp++)
+      {
+	Kiwi.Pause();
+	string p = baz_topper(pp+1000, 50-pp);
+	Console.WriteLine("  yielding {0}", p);
+      }
+    Console.WriteLine("t55_0 done.");
+  }
