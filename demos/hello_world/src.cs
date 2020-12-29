@@ -1,43 +1,33 @@
-﻿// (C) 2003-17, DJ Greaves, University of Cambridge, Computer Laboratory.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met: redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer;
-// redistributions in binary form must reproduce the above copyright
-// notice, this list of conditions and the following disclaimer in the
-// documentation and/or other materials provided with the distribution;
-// neither the name of the copyright holders nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-
-
+﻿
+// Hello world written to parallel port.
 using System; //NameSpace
-class TimesTable
+public class parallel_port
 {
-    static int limit = 5;
+    [Kiwi.OutputWordPort("")] static byte dout;
+    [Kiwi.OutputBitPort("")] static bool strobe;
+    [Kiwi.InputBitPort("")] static bool ack;
+
+    public static void putchar(byte c)
+	{
+	  while (ack == strobe) Kiwi.Pause();
+	  dout = c;
+	  Kiwi.Pause();
+	  strobe = !strobe;
+	}
+
+}
+
+class test9
+{
+    public static void parallel_print(string s)
+    { 
+      for(int i = 0; i<s.Length; i++)
+           parallel_port.putchar((byte)s[i]);
+    }
+
     public static void Main()
     {
-        int i, j;
- 	Console.WriteLine("Times Table Up To " + limit);
-	for (i=1;i<=limit;i++)
-	{
-   	  for (j=1;j<=limit;j++) Console.Write(i*j + " ");
-     	  Console.WriteLine("");
-	}
+	parallel_print("Hello World\n");
     }
 }
+// eof
