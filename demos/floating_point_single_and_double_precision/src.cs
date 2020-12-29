@@ -1,43 +1,65 @@
-﻿// (C) 2003-17, DJ Greaves, University of Cambridge, Computer Laboratory.
+﻿//
+// Kiwi Scientific Acceleration Example - Simple floating point tests.
+// (C) 2014 DJ Greaves, University of Cambridge, Computer Laboratory.
 //
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met: redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer;
-// redistributions in binary form must reproduce the above copyright
-// notice, this list of conditions and the following disclaimer in the
-// documentation and/or other materials provided with the distribution;
-// neither the name of the copyright holders nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+using System;
+using System.Text;
+using KiwiSystem;
+using System.Diagnostics;
 
 
-
-
-using System; //NameSpace
-class TimesTable
+public class test49
 {
-    static int limit = 5;
-    public static void Main()
-    {
-        int i, j;
- 	Console.WriteLine("Times Table Up To " + limit);
-	for (i=1;i<=limit;i++)
-	{
-   	  for (j=1;j<=limit;j++) Console.Write(i*j + " ");
-     	  Console.WriteLine("");
-	}
+  const int problemSize = 6;
+
+  static double [] data = new double [problemSize];
+
+  static volatile int volx = 100; // This defeats compile-time constant propagation.
+
+  public static void test49_phase0()
+        {
+           Console.WriteLine("Kiwi Demo - Test49 phase0 starting.");
+           for (int i=0; i<problemSize; i++)
+           {
+             double qfp0 = (double)((volx+i)*3330.2);
+             Kiwi.Pause();
+             Console.WriteLine("data {0}  qfp0={1}", i, qfp0);
+             float qfp1 = (float) qfp0;
+             Kiwi.Pause();
+             float qfp2 = 7.12345f * (float) i;
+             Kiwi.Pause();
+             int qfp3 = (int) qfp1;
+             Console.WriteLine("                  qfp1={0}  qfp2={1}  qfp3={2}", qfp1, qfp2, qfp3);
+             }
+           }
+
+  public static void test49_phase1()
+        {
+           Console.WriteLine("Kiwi Demo - Test49 phase1 starting.");
+           Kiwi.Pause();
+           for (int i=0; i<problemSize; i++) data[i] = 3.1415;
+           data[problemSize-1] = 2.71;
+
+           for (int it=0; it<3; it++)
+           {
+             Kiwi.Pause();
+             data[1] *= 100.0;
+             data[2] -= 100.0;
+             data[3] /= 100.0;
+             data[4] += 100.0;
+             for (int i=0; i<problemSize; i++)
+             {
+               Console.WriteLine("data {0}  is {1}", i, data[i]);
+             }
+           }
     }
+  [Kiwi.HardwareEntryPoint()]
+  public static void Main()
+        {
+           Console.WriteLine("Kiwi Demo - Test49 starting.");
+           Kiwi.Pause();
+           test49_phase0();
+           test49_phase1();
+           Console.WriteLine("Test49 done.");
+        }
 }
