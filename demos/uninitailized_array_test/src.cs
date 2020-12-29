@@ -26,18 +26,24 @@
 
 
 
-using System; //NameSpace
-class TimesTable
+// statements_foreach_arrays.cs
+// Using foreach with arrays
+using System;
+class MainClass 
 {
-    static int limit = 5;
-    public static void Main()
-    {
-        int i, j;
- 	Console.WriteLine("Times Table Up To " + limit);
-	for (i=1;i<=limit;i++)
-	{
-   	  for (j=1;j<=limit;j++) Console.Write(i*j + " ");
-     	  Console.WriteLine("");
-	}
-    }
+   public static void Main() 
+   {
+      int odd = 0, even = 0;
+      int[] arr = new int [] {0,1,2,5,7,8,11};
+
+      foreach (int i in arr) 
+      {
+         if (i%2 == 0)  
+            even++;      
+         else 
+            odd++;         
+      }
+      Console.WriteLine("Found {0} Odd Numbers, and {1} Even Numbers.",
+                        odd, even) ;
+   }
 }
