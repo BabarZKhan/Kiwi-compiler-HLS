@@ -287,7 +287,7 @@ ubuntu@ubuntukhan:~$
 # F# compiler installation 
  
  ``` 
-  ubuntu@ubuntukhan:~$ sudo apt-get install fsharp
+ubuntu@ubuntukhan:~$ sudo apt-get install fsharp
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -1166,4 +1166,252 @@ Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 ubuntu@ubuntukhan:~$ 
  ```  
+
+# Install the .NET SDK or the .NET Runtime on Ubuntu
+
+ ``` 
  
+ ubuntu@ubuntukhan:~$ wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+--2021-04-23 21:49:41--  https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+Resolving packages.microsoft.com (packages.microsoft.com)... 13.81.215.193
+Connecting to packages.microsoft.com (packages.microsoft.com)|13.81.215.193|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3132 (3,1K) [application/octet-stream]
+Saving to: ‘packages-microsoft-prod.deb’
+
+packages-microsoft-prod.deb       100%[==========================================================>]   3,06K  --.-KB/s    in 0s      
+
+2021-04-23 21:49:41 (85,6 MB/s) - ‘packages-microsoft-prod.deb’ saved [3132/3132]
+
+ubuntu@ubuntukhan:~$ sudo dpkg -i packages-microsoft-prod.deb
+[sudo] password for ubuntu: 
+Selecting previously unselected package packages-microsoft-prod.
+(Reading database ... 336481 files and directories currently installed.)
+Preparing to unpack packages-microsoft-prod.deb ...
+Unpacking packages-microsoft-prod (1.0-ubuntu18.04.2) ...
+Setting up packages-microsoft-prod (1.0-ubuntu18.04.2) ...
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ sudo apt-get update; \
+>   sudo apt-get install -y apt-transport-https && \
+>   sudo apt-get update && \
+>   sudo apt-get install -y dotnet-sdk-5.0
+Ign:1 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                
+Get:2 http://dl.google.com/linux/chrome/deb stable InRelease [1.811 B]                                                              
+Hit:3 http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu bionic InRelease                                                         
+Get:4 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease [15,4 kB]                                            
+Hit:5 http://de.archive.ubuntu.com/ubuntu bionic InRelease                                                                          
+Get:6 http://de.archive.ubuntu.com/ubuntu bionic-updates InRelease [88,7 kB]                                                        
+Get:7 http://security.ubuntu.com/ubuntu bionic-security InRelease [88,7 kB]                                                         
+Err:8 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release                                  
+  404  Not Found [IP: 129.125.36.99 80]
+Get:9 http://de.archive.ubuntu.com/ubuntu bionic-backports InRelease [74,6 kB]                                                      
+Get:10 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease [4.003 B]                                                  
+Get:11 http://mirror.nullivex.com/ppa/ubuntu-toolchain-r-test bionic InRelease [15,4 kB]                                            
+Ign:12 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic InRelease
+Get:13 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.099 B]
+Hit:14 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release
+Ign:15 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release.gpg
+Get:16 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic/main amd64 Packages [33,9 kB]
+Get:17 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic/main i386 Packages [32,0 kB]   
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1.696 kB]              
+Get:19 http://de.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2.039 kB]
+Get:20 http://de.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [1.277 kB]                                             
+Get:21 https://packages.microsoft.com/ubuntu/18.04/prod bionic/main amd64 Packages [179 kB]                                         
+Get:22 http://de.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [410 kB]                                              
+Get:23 http://de.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [294 kB]                                       
+Get:24 http://de.archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [24,5 kB]                                        
+Get:25 http://de.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [324 kB]                                        
+Get:26 http://de.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [43,8 kB]                                       
+Get:27 http://de.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1.566 kB]                                         
+Get:28 http://de.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1.733 kB]                                        
+Get:29 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [973 kB]                                                
+Get:30 http://de.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [369 kB]                                          
+Get:31 http://de.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [289 kB]                                   
+Get:32 http://de.archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [11,6 kB]                                        
+Get:33 http://de.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25,0 kB]                                       
+Get:34 http://de.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2.468 B]                                
+Get:35 http://de.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [9.292 B]                                
+Get:36 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [318 kB]                                               
+Get:37 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [48,9 kB]                                       
+Get:38 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [302 kB]                                         
+Get:39 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [40,4 kB]                                        
+Get:40 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [980 kB]                                            
+Get:41 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1.124 kB]                                         
+Get:42 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [253 kB]                                           
+Get:43 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [60,4 kB]                                   
+Get:44 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2.464 B]                                 
+Reading package lists... Done                                                                                                       
+E: The repository 'http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cryptsetup-bin cython cython3 dh-exec dh-systemd docutils-common efibootmgr gperf javahelper jq junit4 libaio-dev
+  libbabeltrace-ctf-dev libbabeltrace-dev libblas3 libblkid-dev libcap-ng-dev libcryptsetup-dev libcunit1 libcunit1-dev
+  libcurl4-openssl-dev libfuse-dev libfwup1 libgcrypt20-dev libgfortran4 libgmp-dev libgmpxx4ldbl libgnutls-dane0
+  libgnutls-openssl27 libgnutls28-dev libgnutlsxx28 libgoogle-perftools-dev libgpg-error-dev libhamcrest-java libibverbs-dev
+  libidn2-0-dev libidn2-dev libjq1 libjs-bootstrap libjs-d3 libjs-eonasdan-bootstrap-datetimepicker libjs-jquery-hotkeys
+  libjs-moment libjs-mustache libjs-rickshaw libjs-sphinxdoc libjs-underscore libkeyutils-dev liblapack3 libldap2-dev
+  libleveldb-dev libleveldb1v5 liblttng-ust-ctl4 liblttng-ust-dev liblttng-ust-python-agent0 liblttng-ust0 liblua5.3-dev liblz4-dev
+  liblzma-dev liboath-dev liboath0 libonig4 libp11-kit-dev libpython3-all-dev librabbitmq-dev librabbitmq4 librdkafka++1
+  librdkafka-dev librdkafka1 librdmacm-dev librdmacm1 libselinux1-dev libsepol1-dev libsnappy-dev libsqlite3-dev libtasn1-6-dev
+  libudev-dev libunbound2 libunwind-dev liburcu-dev liburcu6 libxml2-dev libxmlsec1-dev libxmlsec1-gcrypt libxmlsec1-gnutls
+  libxmlsec1-openssl libxslt1-dev libzstd-dev linux-headers-5.4.0-48-generic linux-hwe-5.4-headers-5.4.0-48
+  linux-hwe-5.4-headers-5.4.0-58 linux-image-5.4.0-48-generic linux-modules-5.4.0-48-generic linux-modules-extra-5.4.0-48-generic
+  lua-any lua5.1 luarocks nasm nettle-dev prometheus python-babel-localedata python-pastedeploy-tpl python3-alabaster python3-all
+  python3-all-dev python3-babel python3-bcrypt python3-bs4 python3-cherrypy3 python3-click python3-colorama python3-coverage
+  python3-decorator python3-docutils python3-imagesize python3-jinja2 python3-jwt python3-logutils python3-nose python3-numpy
+  python3-paste python3-pastedeploy python3-pecan python3-pluggy python3-prettytable python3-py python3-roman python3-scipy
+  python3-simplegeneric python3-singledispatch python3-sphinx python3-tempita python3-virtualenv python3-waitress python3-webob
+  python3-webtest python3-werkzeug socat sphinx-common tox uuid-dev valgrind virtualenv xfslibs-dev xmlstarlet yasm
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 52 not upgraded.
+Need to get 1.692 B of archives.
+After this operation, 154 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.13 [1.692 B]
+Fetched 1.692 B in 11s (160 B/s)         
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 336489 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.13_all.deb ...
+Unpacking apt-transport-https (1.6.13) ...
+Setting up apt-transport-https (1.6.13) ...
+Ign:1 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                
+Hit:2 http://de.archive.ubuntu.com/ubuntu bionic InRelease                                                                          
+Hit:3 http://de.archive.ubuntu.com/ubuntu bionic-updates InRelease                                                                  
+Hit:4 http://de.archive.ubuntu.com/ubuntu bionic-backports InRelease                                                                
+Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease                                                                   
+Hit:6 http://dl.google.com/linux/chrome/deb stable InRelease                                                                        
+Hit:7 http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu bionic InRelease                                                         
+Hit:8 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                                      
+Err:9 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release                                  
+  404  Not Found [IP: 129.125.36.99 80]
+Get:10 http://mirror.nullivex.com/ppa/ubuntu-toolchain-r-test bionic InRelease [15,4 kB]                                            
+Hit:11 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease                                                            
+Ign:12 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic InRelease
+Hit:13 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release
+Ign:14 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release.gpg
+Reading package lists... Done                                                                                                       
+E: The repository 'http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ sudo apt-get update; \
+>   sudo apt-get install -y apt-transport-https && \
+>   sudo apt-get update && \
+>   sudo apt-get install -y aspnetcore-runtime-5.0
+Ign:1 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                
+Hit:2 http://de.archive.ubuntu.com/ubuntu bionic InRelease                                                                          
+Hit:3 http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu bionic InRelease                                                         
+Err:4 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release                                  
+  404  Not Found [IP: 129.125.36.99 80]
+Hit:5 http://dl.google.com/linux/chrome/deb stable InRelease                                                                        
+Hit:6 http://de.archive.ubuntu.com/ubuntu bionic-updates InRelease                                                                  
+Hit:7 http://de.archive.ubuntu.com/ubuntu bionic-backports InRelease                                                                
+Hit:8 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                                      
+Hit:9 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease                                                             
+Hit:10 http://security.ubuntu.com/ubuntu bionic-security InRelease                                                                  
+Get:11 http://mirror.nullivex.com/ppa/ubuntu-toolchain-r-test bionic InRelease [15,4 kB]                             
+Ign:12 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic InRelease
+Hit:13 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release
+Ign:14 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release.gpg
+Reading package lists... Done                      
+E: The repository 'http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apt-transport-https is already the newest version (1.6.13).
+The following packages were automatically installed and are no longer required:
+  cryptsetup-bin cython cython3 dh-exec dh-systemd docutils-common efibootmgr gperf javahelper jq junit4 libaio-dev
+  libbabeltrace-ctf-dev libbabeltrace-dev libblas3 libblkid-dev libcap-ng-dev libcryptsetup-dev libcunit1 libcunit1-dev
+  libcurl4-openssl-dev libfuse-dev libfwup1 libgcrypt20-dev libgfortran4 libgmp-dev libgmpxx4ldbl libgnutls-dane0
+  libgnutls-openssl27 libgnutls28-dev libgnutlsxx28 libgoogle-perftools-dev libgpg-error-dev libhamcrest-java libibverbs-dev
+  libidn2-0-dev libidn2-dev libjq1 libjs-bootstrap libjs-d3 libjs-eonasdan-bootstrap-datetimepicker libjs-jquery-hotkeys
+  libjs-moment libjs-mustache libjs-rickshaw libjs-sphinxdoc libjs-underscore libkeyutils-dev liblapack3 libldap2-dev
+  libleveldb-dev libleveldb1v5 liblttng-ust-ctl4 liblttng-ust-dev liblttng-ust-python-agent0 liblttng-ust0 liblua5.3-dev liblz4-dev
+  liblzma-dev liboath-dev liboath0 libonig4 libp11-kit-dev libpython3-all-dev librabbitmq-dev librabbitmq4 librdkafka++1
+  librdkafka-dev librdkafka1 librdmacm-dev librdmacm1 libselinux1-dev libsepol1-dev libsnappy-dev libsqlite3-dev libtasn1-6-dev
+  libudev-dev libunbound2 libunwind-dev liburcu-dev liburcu6 libxml2-dev libxmlsec1-dev libxmlsec1-gcrypt libxmlsec1-gnutls
+  libxmlsec1-openssl libxslt1-dev libzstd-dev linux-headers-5.4.0-48-generic linux-hwe-5.4-headers-5.4.0-48
+  linux-hwe-5.4-headers-5.4.0-58 linux-image-5.4.0-48-generic linux-modules-5.4.0-48-generic linux-modules-extra-5.4.0-48-generic
+  lua-any lua5.1 luarocks nasm nettle-dev prometheus python-babel-localedata python-pastedeploy-tpl python3-alabaster python3-all
+  python3-all-dev python3-babel python3-bcrypt python3-bs4 python3-cherrypy3 python3-click python3-colorama python3-coverage
+  python3-decorator python3-docutils python3-imagesize python3-jinja2 python3-jwt python3-logutils python3-nose python3-numpy
+  python3-paste python3-pastedeploy python3-pecan python3-pluggy python3-prettytable python3-py python3-roman python3-scipy
+  python3-simplegeneric python3-singledispatch python3-sphinx python3-tempita python3-virtualenv python3-waitress python3-webob
+  python3-webtest python3-werkzeug socat sphinx-common tox uuid-dev valgrind virtualenv xfslibs-dev xmlstarlet yasm
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 52 not upgraded.
+Ign:1 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease
+Err:2 http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release                                  
+  404  Not Found [IP: 129.125.36.99 80]
+Hit:3 http://de.archive.ubuntu.com/ubuntu bionic InRelease                                                                          
+Hit:4 http://de.archive.ubuntu.com/ubuntu bionic-updates InRelease                                                                  
+Hit:5 http://de.archive.ubuntu.com/ubuntu bionic-backports InRelease                                                                
+Hit:6 http://security.ubuntu.com/ubuntu bionic-security InRelease                                                                   
+Hit:7 http://dl.google.com/linux/chrome/deb stable InRelease                                                                        
+Hit:8 http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu bionic InRelease                                                         
+Hit:9 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic InRelease                                                      
+Get:10 http://mirror.nullivex.com/ppa/ubuntu-toolchain-r-test bionic InRelease [15,4 kB]                                            
+Hit:11 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease                                                            
+Ign:12 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic InRelease
+Hit:13 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release
+Ign:14 https://chacra.ceph.com/r/libboost/master/1d7c7a00cc3f37e340bae0360191a757b44ec80c/ubuntu/bionic/flavors/default bionic Release.gpg
+Reading package lists... Done                                                                                                       
+E: The repository 'http://deb.rug.nl/ppa/mirror/ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+ubuntu@ubuntukhan:~$ 
+ubuntu@ubuntukhan:~$ 
+
+
+ubuntu@ubuntukhan:~/code$ sudo snap install dotnet-sdk
+[sudo] password for ubuntu: 
+error: This revision of snap "dotnet-sdk" was published using classic confinement and thus may
+       perform arbitrary system changes outside of the security sandbox that snaps are usually
+       confined to, which may put your system at risk.
+
+       If you understand and want to proceed repeat the command including --classic.
+ubuntu@ubuntukhan:~/code$ sudo snap install dotnet
+error: snap "dotnet" not found
+ubuntu@ubuntukhan:~/code$ 
+ubuntu@ubuntukhan:~/code$ 
+ubuntu@ubuntukhan:~/code$ 
+ubuntu@ubuntukhan:~/code$ 
+ubuntu@ubuntukhan:~/code$ sudo snap install dotnet-sdk --classic
+dotnet-sdk 5.0.202 from Microsoft .NET Core (dotnetcore✓) installed
+ubuntu@ubuntukhan:~/code$ dotnet
+
+Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+  -h|--help         Display help.
+  --info            Display .NET information.
+  --list-sdks       Display the installed SDKs.
+  --list-runtimes   Display the installed runtimes.
+
+path-to-application:
+  The path to an application .dll file to execute.
+ubuntu@ubuntukhan:~/code$ 
+
+  ``` 
