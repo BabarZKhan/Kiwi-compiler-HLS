@@ -1288,6 +1288,35 @@ Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 ubuntu@ubuntukhan:~$ 
  ```  
+ 
+# Test F# code 
+ 
+ ``` 
+ubuntu@ubuntukhan:~/newfolder$ dotnet new console -lang F#
+Getting ready...
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on /home/ubuntu/newfolder/newfolder.fsproj...
+  Determining projects to restore...
+  Restored /home/ubuntu/newfolder/newfolder.fsproj (in 1.93 sec).
+Restore succeeded.
+
+ubuntu@ubuntukhan:~/newfolder$ ls
+1  example.fs  newfolder.fsproj  obj  Program.fs
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ vi Program.fs 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ 
+ubuntu@ubuntukhan:~/newfolder$ dotnet run 
+Hello world from F#
+ubuntu@ubuntukhan:~/newfolder$ 
+``` 
+
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
