@@ -1,6 +1,7 @@
 # Installation 
 - Mono
 - F# compiler
+- Test F# application
 - dotnet sdk
 
 
@@ -1289,7 +1290,7 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 ubuntu@ubuntukhan:~$ 
  ```  
  
-# Test F# code 
+# Test F# application
  
  ``` 
 ubuntu@ubuntukhan:~/newfolder$ dotnet new console -lang F#
