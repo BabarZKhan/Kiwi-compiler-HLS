@@ -1,6 +1,8 @@
 # NOTE 
 Please see below the **References** or [here](https://www.cl.cam.ac.uk/~djg11/kiwi/) for more information from the original website of **David Greaves** (the main developer of Kiwi).
 
+[My involvement in Kiwi](https://www.cl.cam.ac.uk/research/srg/han/hprls/orangepath/kiwic-demos/kiwi-posit-unum-and-custom-arithmetics/)
+
 # Kiwi-compiler-HLS
 Kiwi was developed at the University of Cambridge Computer Laboratory and Microsoft Research Limited, headed by **David Greaves (UoCCL)** and **Satnam Singh (MRL)**. Kiwi continues at the Computer Laboratory as part of a logic synthesis project called HPR L/S and it uses the Orangepath core library [1].
 
