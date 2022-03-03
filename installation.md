@@ -3,6 +3,8 @@
 - F# compiler
 - Test F# application
 - dotnet sdk
+- Icarus Verilog
+- Verilator
 
 
 # Mono installation 
@@ -1567,3 +1569,95 @@ path-to-application:
 ubuntu@ubuntukhan:~/code$ 
 
   ``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Install Icarus Verilog
+
+``` 
+ubuntudev@ubuntudev:~$ sudo apt-get install iverilog
+[sudo] password for ubuntudev: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cmake-data dh-python lib32gcc-s1 lib32gcc1 lib32stdc++6 libc6-i386 libclang-common-6.0-dev libclang1-6.0 libexpat1-dev libffi-dev libjsoncpp1 liblua5.1-0 libluajit-5.1-2 libluajit-5.1-common
+  libobjc-7-dev libobjc4 libomp-dev libomp5 libpython3-dev libpython3.6-dev librhash0 libtinfo-dev libuv1 pandoc-data python3-distutils python3.6-dev
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  gtkwave
+The following NEW packages will be installed:
+  iverilog
+0 upgraded, 1 newly installed, 0 to remove and 434 not upgraded.
+Need to get 1.811 kB of archives.
+After this operation, 6.206 kB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu bionic/universe amd64 iverilog amd64 10.1-0.1build1 [1.811 kB]
+Fetched 1.811 kB in 1s (1.355 kB/s)   
+Selecting previously unselected package iverilog.
+(Reading database ... 152694 files and directories currently installed.)
+Preparing to unpack .../iverilog_10.1-0.1build1_amd64.deb ...
+Unpacking iverilog (10.1-0.1build1) ...
+Setting up iverilog (10.1-0.1build1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+
+  
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Install Verilator
+
+``` 
+ubuntudev@ubuntudev:~$ sudo apt install verilator
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cmake-data dh-python lib32gcc-s1 lib32gcc1 lib32stdc++6 libc6-i386 libclang-common-6.0-dev libclang1-6.0 libexpat1-dev libffi-dev libjsoncpp1 liblua5.1-0 libluajit-5.1-2 libluajit-5.1-common
+  libobjc-7-dev libobjc4 libomp-dev libomp5 libpython3-dev libpython3.6-dev librhash0 libtinfo-dev libuv1 pandoc-data python3-distutils python3.6-dev
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  gtkwave systemc
+The following NEW packages will be installed:
+  verilator
+0 upgraded, 1 newly installed, 0 to remove and 434 not upgraded.
+Need to get 2.878 kB of archives.
+After this operation, 13,1 MB of additional disk space will be used.
+Get:1 http://de.archive.ubuntu.com/ubuntu bionic/universe amd64 verilator amd64 3.916-1build1 [2.878 kB]
+Fetched 2.878 kB in 2s (1.307 kB/s)    
+Selecting previously unselected package verilator.
+(Reading database ... 152787 files and directories currently installed.)
+Preparing to unpack .../verilator_3.916-1build1_amd64.deb ...
+Unpacking verilator (3.916-1build1) ...
+Setting up verilator (3.916-1build1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+
+```
