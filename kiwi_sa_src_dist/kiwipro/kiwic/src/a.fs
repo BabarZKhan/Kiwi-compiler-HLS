@@ -50,7 +50,9 @@ open kcode
 open firstpass
 open ksc
 
-let g_kiwi_objectlock = "kiwi_objectlock"  // Pseudo field in every object at offset zero: serves as a mutex.
+// Constants and global variables
+let kiwiObjectLock = "kiwi_objectlock" // Pseudo field in every object at offset zero: serves as a mutex.
+
 
 // let g_intcil_vd = ref 20 // 20 is off, default level.
 
